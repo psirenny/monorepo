@@ -1,0 +1,11 @@
+{
+  "command": {
+    "publish": {
+      "allowBranch": "master"
+    }
+  },
+  "npmClient": "yarn",
+  "stream": true,
+  "useWorkspaces": true,
+  "version": "independent"
+}

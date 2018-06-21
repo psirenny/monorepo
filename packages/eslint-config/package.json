@@ -1,0 +1,76 @@
+{
+  "name": "@psirenny/eslint-config",
+  "description": "psirenny eslint config",
+  "version": "1.0.0",
+  "author": "Dennis Torres <djtorres0@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/psirenny/monorepo/issues"
+  },
+  "devDependencies": {
+    "dictionary-en-us": "2.0.0",
+    "fixpack": "2.3.1",
+    "npm-check-updates": "3.0.0-alpha.3",
+    "npm-run-all": "4.1.3",
+    "nsp": "3.2.1",
+    "remark-cli": "5.0.0",
+    "remark-preset-lint-consistent": "2.0.2",
+    "remark-preset-lint-markdown-style-guide": "2.1.2",
+    "remark-preset-lint-recommended": "3.0.2",
+    "retext-assuming": "1.0.0",
+    "retext-contractions": "2.1.2",
+    "retext-diacritics": "1.2.1",
+    "retext-english": "3.0.0",
+    "retext-equality": "3.3.0",
+    "retext-indefinite-article": "1.1.4",
+    "retext-intensify": "3.0.1",
+    "retext-passive": "1.3.0",
+    "retext-profanities": "4.4.0",
+    "retext-quotes": "2.0.1",
+    "retext-readability": "4.2.0",
+    "retext-redundant-acronyms": "1.2.1",
+    "retext-repeated-words": "1.2.1",
+    "retext-sentence-spacing": "2.0.1",
+    "retext-simplify": "4.1.1",
+    "retext-smartypants": "3.0.1",
+    "retext-spell": "2.3.1",
+    "retext-syntax-mentions": "1.1.4",
+    "retext-syntax-urls": "1.0.0",
+    "trash-cli": "1.4.0"
+  },
+  "homepage": "https://github.com/psirenny/monorepo/tree/master/packages/eslint-config",
+  "keywords": [
+    "config",
+    "eslint",
+    "exo",
+    "js",
+    "native",
+    "style"
+  ],
+  "license": "Unlicense",
+  "main": "src/index.json",
+  "peerDependencies": {
+    "eslint-config-airbnb-base": "12.1.0",
+    "eslint-plugin-ava": "4.5.1",
+    "eslint-plugin-babel": "5.1.0",
+    "eslint-plugin-flowtype": "2.47.1",
+    "eslint-plugin-markdown": "1.0.0-beta.6"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/psirenny/monorepo/tree/master/packages/eslint-config"
+  },
+  "scripts": {
+    "audit": "nsp check",
+    "check": "npm-run-all audit fixpack",
+    "clean": "trash node_modules",
+    "fix": "npm-run-all fixpack",
+    "fixpack": "fixpack",
+    "lint": "remark .",
+    "outdated": "ncu",
+    "update": "ncu -u"
+  },
+  "sideEffects": false
+}

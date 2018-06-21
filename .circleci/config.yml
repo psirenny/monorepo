@@ -1,0 +1,21 @@
+version: 2
+jobs:
+  install:
+    docker:
+      - image: circleci/node:10
+    steps:
+      - checkout
+      - run: yarn
+      - run: yarn run install:pkgs
+  check:
+    docker:
+      - image: circleci/node:10
+    steps:
+      - checkout
+      - run: yarn run check
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - build
+      - check
