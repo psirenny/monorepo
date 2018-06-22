@@ -9,6 +9,7 @@
   "devDependencies": {
     "fixpack": "2.3.1",
     "flow-mono-cli": "1.3.4",
+    "greenkeeper-lockfile": "1.15.1",
     "husky": "1.0.0-rc.1",
     "lerna": "3.0.0-beta.21",
     "npm-check-updates": "3.0.0-alpha.3",
@@ -39,6 +40,8 @@
     "check": "npm-run-all check:self check:pkgs",
     "check:pkgs": "lerna run check",
     "check:self": "npm-run-all audit:self fixpack:self lint:self",
+    "ci:precheck": "greenkeeper-lockfile-update",
+    "ci:postcheck": "greenkeeper-lockfile-upload",
     "clean": "npm-run-all clean:pkgs clean:self",
     "clean:pkgs": "lerna run clean",
     "clean:self": "trash *.log node_modules",

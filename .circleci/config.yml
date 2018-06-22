@@ -8,7 +8,9 @@ jobs:
       - run: yarn
       - run: yarn run install:pkgs
       - run: yarn run build
+      - run: yarn run ci:precheck
       - run: yarn run check
+      - run: yarn run ci:postcheck
 workflows:
   version: 2
   build_and_check:
