@@ -277,9 +277,9 @@ const defaultCreateGetRollupOutputOptions = (pkgName: string) => (
   (variant: BuildVariant, srcPath: string) => ({
     freeze: false,
     interop: false,
-    name: pathBasename(srcPath) === 'index.js' ?
-      pascalCase(`${pkgName}`) :
-      pascalCase(`${pkgName}/${pathBasename(srcPath, '.js')}`),
+    name: pathBasename(srcPath) === 'index.js'
+      ? pascalCase(`${pkgName}`)
+      : pascalCase(`${pkgName}/${pathBasename(srcPath, '.js')}`),
     sourcemap: true,
     treeshake: {
       propertyReadSideEffects: false,
