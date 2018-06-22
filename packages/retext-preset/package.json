@@ -52,10 +52,10 @@
   },
   "homepage": "https://github.com/psirenny/monorepo/tree/master/packages/retext-preset",
   "keywords": [
-    "exo",
+    "guide",
     "lint",
     "markdown",
-    "native",
+    "psirenny",
     "preset",
     "remark",
     "style"

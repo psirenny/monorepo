@@ -67,11 +67,11 @@
   },
   "homepage": "https://github.com/psirenny/monorepo/tree/master/packages/remark-preset",
   "keywords": [
-    "exo",
+    "guide",
     "lint",
     "markdown",
-    "native",
     "preset",
+    "psirenny",
     "remark",
     "style"
   ],

@@ -79,10 +79,10 @@
   },
   "homepage": "https://github.com/psirenny/monorepo/tree/master/packages/tools",
   "keywords": [
-    "exo",
-    "native",
+    "build",
+    "psirenny",
     "supported",
-    "targets"
+    "tools"
   ],
   "license": "Unlicense",
   "main": "dist/node/6.14.2/cjs/debug/index.js",
