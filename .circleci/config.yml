@@ -7,7 +7,7 @@ jobs:
       - checkout
       - run: yarn
       - run: yarn run install:pkgs
-      - run: yarn run build:all
+      - run: yarn run build
   check:
     docker:
       - image: circleci/node:10
