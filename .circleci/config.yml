@@ -20,3 +20,5 @@ workflows:
     jobs:
       - build
       - check
+        requires:
+          - build
