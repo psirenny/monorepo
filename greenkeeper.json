@@ -1,0 +1,13 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "package.json",
+        "packages/eslint-config/package.json",
+        "packages/remark-preset/package.json",
+        "packages/retext-preset/package.json",
+        "packages/tools/package.json"
+      ]
+    }
+  }
+}
