@@ -104,7 +104,6 @@
     "lint:js": "eslint . --ext .js,.md",
     "lint:md": "remark .",
     "outdated": "ncu",
-    "prepublish": "npm-run-all run build",
     "typecheck": "flow check",
     "update": "ncu -u"
   },

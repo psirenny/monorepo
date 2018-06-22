@@ -93,7 +93,7 @@
   },
   "scripts": {
     "audit": "nsp check",
-    "build": "tools build --platforms node",
+    "build": "node_modules/@psirenny/tools/dist/node/6.14.2/cjs/debug/code/cli.js build --platforms node",
     "check": "npm-run-all audit fixpack typecheck build lint",
     "clean": "trash dist node_modules",
     "fix": "npm-run-all fixpack",
