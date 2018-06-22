@@ -1,7 +1,6 @@
 version: 2
 jobs:
   build_and_check:
-    working_directory: ~/tmp
     docker:
       - image: circleci/node:10
     steps:
