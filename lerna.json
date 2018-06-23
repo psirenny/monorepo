@@ -1,5 +1,8 @@
 {
   "command": {
+    "bootstrap": {
+      "rejectCycles": true
+    },
     "publish": {
       "allowBranch": "master"
     }
