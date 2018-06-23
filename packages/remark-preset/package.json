@@ -15,7 +15,7 @@
     "@psirenny/eslint-config": "1.0.0",
     "@psirenny/retext-preset": "1.0.0",
     "@psirenny/tools": "1.0.0",
-    "babel-eslint": "8.2.3",
+    "babel-eslint": "8.2.5",
     "dictionary-en-us": "2.0.0",
     "eslint": "4.19.1",
     "eslint-config-airbnb-base": "13.0.0",
