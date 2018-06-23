@@ -1,7 +1,7 @@
 {
   "name": "@psirenny/tools",
   "description": "psirenny tools",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Dennis Torres <djtorres0@gmail.com>",
   "bin": {
     "tools": "dist/node/6.14.2/cjs/debug/code/cli.js"
@@ -34,7 +34,7 @@
     "@babel/preset-env": "7.0.0-beta.51",
     "@babel/preset-flow": "7.0.0-beta.51",
     "@babel/preset-stage-0": "7.0.0-beta.51",
-    "@psirenny/eslint-config": "1.0.0",
+    "@psirenny/eslint-config": "^1.0.1",
     "babel-eslint": "8.2.5",
     "babel-plugin-unassert": "2.1.2",
     "babel-preset-power-assert": "3.0.0-beta.1",
