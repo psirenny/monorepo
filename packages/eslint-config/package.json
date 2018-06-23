@@ -68,7 +68,6 @@
     "clean": "trash node_modules",
     "fix": "npm-run-all fixpack",
     "fixpack": "fixpack",
-    "lint": "remark .",
     "outdated": "ncu",
     "update": "ncu -u"
   },

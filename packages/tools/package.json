@@ -96,13 +96,11 @@
   "scripts": {
     "audit": "nsp check",
     "build": "babel-node src/code/cli build --platforms node",
-    "check": "npm-run-all audit fixpack lint:js typecheck",
+    "check": "npm-run-all audit fixpack lint typecheck",
     "clean": "trash dist node_modules",
     "fix": "npm-run-all fixpack",
     "fixpack": "fixpack",
-    "lint": "npm-run-all lint:js lint:md",
-    "lint:js": "eslint . --ext .js,.md",
-    "lint:md": "remark .",
+    "lint": "eslint . --ext .js,.md",
     "outdated": "ncu",
     "typecheck": "flow check",
     "update": "ncu -u"

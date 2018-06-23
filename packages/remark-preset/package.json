@@ -110,7 +110,7 @@
     "fixpack": "fixpack",
     "lint": "npm-run-all lint:js lint:md",
     "lint:js": "eslint . --ext .js,.md",
-    "lint:md": "remark .",
+    "lint:md": "remark --frail .",
     "outdated": "ncu",
     "typecheck": "flow check",
     "update": "ncu -u"
