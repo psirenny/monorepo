@@ -1,7 +1,7 @@
 {
   "name": "@psirenny/monorepo",
   "description": "@psirenny's monorepo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Dennis Torres <djtorres0@gmail.com>",
   "bugs": {
     "url": "https://github.com/psirenny/psirenny/issues"
@@ -54,6 +54,7 @@
     "outdated": "npm-run-all outdated:self outdated:pkgs",
     "outdated:pkgs": "lerna run outdated",
     "outdated:self": "ncu",
+    "publish": "lerna publish",
     "release": "standard-version",
     "update": "npm-run-all update:self update:pkgs",
     "update:pkgs": "lerna run update",
