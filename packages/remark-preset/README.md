@@ -1,3 +1,3 @@
 # @psirenny/remark-preset
 
-[@psirenny's](https://github.com/psirenny) markdown style.
+[@psirenny’s](https://github.com/psirenny) markdown style.

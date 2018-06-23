@@ -23,6 +23,7 @@ import retextSyntaxMentions from 'retext-syntax-mentions';
 import retextSyntaxUrls from 'retext-syntax-urls';
 
 const dictionaryExo = `
+  monorepo
   psirenny
 `;
 

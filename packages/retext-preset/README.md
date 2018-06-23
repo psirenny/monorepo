@@ -1,3 +1,3 @@
 # @psirenny/retext-preset
 
-[@psirenny's](https://github.com/psirenny) prose style.
+[@psirenny’s](https://github.com/psirenny) prose style.
