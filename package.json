@@ -50,7 +50,7 @@
     "flow-fix": "flow-mono create-symlinks ./build/.flowconfig",
     "install:pkgs": "npm-run-all lerna:bootstrap flow-fix",
     "lerna:bootstrap": "lerna bootstrap",
-    "lint:self": "remark **.md",
+    "lint:self": "remark --frail .",
     "outdated": "npm-run-all outdated:self outdated:pkgs",
     "outdated:pkgs": "lerna run outdated",
     "outdated:self": "ncu",
