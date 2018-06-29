@@ -24,7 +24,7 @@
     "rollup-plugin-uglify": "4.0.0",
     "terser": "3.7.6",
     "uglify-es": "3.3.9",
-    "yargs": "11.0.0"
+    "yargs": "12.0.1"
   },
   "devDependencies": {
     "@babel/cli": "7.0.0-beta.51",
