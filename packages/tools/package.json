@@ -45,7 +45,7 @@
     "eslint-plugin-babel": "5.1.0",
     "eslint-plugin-flowtype": "2.49.3",
     "eslint-plugin-import": "2.12.0",
-    "eslint-plugin-jsx-a11y": "6.0.3",
+    "eslint-plugin-jsx-a11y": "6.1.0",
     "eslint-plugin-markdown": "1.0.0-beta.6",
     "fixpack": "2.3.1",
     "flow-bin": "0.75.0",
