@@ -1,3 +1,0 @@
-*.log
-.circleci
-node_modules
