@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
+// @flow
+
 /* eslint-disable global-require */
 /* eslint-disable import/no-dynamic-require */
-
-// @flow
 
 import { join as pathJoin, resolve as pathResolve } from 'path';
 import yargs from 'yargs';
