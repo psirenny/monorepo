@@ -95,15 +95,9 @@ const defaultGetBabelOptions = (variant: BuildVariant) => {
   const opts = {
     plugins: [],
     presets: [
-      ['@babel/env', {
-        loose: true,
+      ['@psirenny/babel-preset', {
         modules: false,
         targets: variant.targets,
-      }],
-      ['@babel/flow'],
-      ['@babel/stage-0', {
-        decoratorsLegacy: true,
-        loose: true,
       }],
     ],
   };

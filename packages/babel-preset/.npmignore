@@ -1,0 +1,4 @@
+*.log
+.elsintrc
+.eslintignore
+.flowconfig

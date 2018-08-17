@@ -1,6 +1,6 @@
 {
   "name": "@psirenny/eslint-config",
-  "description": "psirenny eslint config",
+  "description": "psirenny's eslint config",
   "version": "1.0.2",
   "author": "Dennis Torres <djtorres0@gmail.com>",
   "bugs": {
