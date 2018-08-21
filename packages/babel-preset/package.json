@@ -9,7 +9,7 @@
   "devDependencies": {
     "@psirenny/eslint-config": "1.0.2",
     "dictionary-en-us": "2.0.0",
-    "eslint": "5.3.0",
+    "eslint": "5.4.0",
     "eslint-config-airbnb-base": "13.1.0",
     "eslint-plugin-ava": "5.1.0",
     "eslint-plugin-babel": "5.1.0",
