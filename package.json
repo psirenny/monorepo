@@ -38,7 +38,6 @@
     "audit:self": "nsp check",
     "build": "npm-run-all build:pkgs",
     "build:pkgs": "lerna run build",
-    "foo": "echo 'foo' | commitlint",
     "check": "npm-run-all check:self check:pkgs",
     "check:pkgs": "lerna run check",
     "check:self": "npm-run-all audit:self fixpack:self lint:self",
