@@ -1,5 +1,5 @@
 {
   "hooks": {
-    "commit-msg": "validate-commit-msg"
+    "commitmsg": "commitlint -E GIT_PARAMS"
   }
 }
