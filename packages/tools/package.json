@@ -10,7 +10,7 @@
     "url": "https://github.com/psirenny/monorepo/issues"
   },
   "dependencies": {
-    "@babel/polyfill": "7.0.0-rc.1",
+    "@babel/polyfill": "7.0.0-rc.3",
     "async": "2.6.1",
     "browserslist": "4.0.2",
     "fs-extra": "7.0.0",
