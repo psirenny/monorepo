@@ -4,8 +4,8 @@ jobs:
     docker:
       - image: circleci/node:10
     steps:
-      - git config --global user.email 'support@greenkeeper.io'
-      - git config --global user.name 'greenkeeperio-bot'
+      - run: export GK_LOCK_COMMIT_EMAIL=support@greenkeeper.io
+      - run: export GK_LOCK_COMMIT_NAME=greenkeeperio-bot
       - checkout
       - run: yarn
       - run: yarn run install:pkgs
