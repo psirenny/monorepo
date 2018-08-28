@@ -30,7 +30,7 @@
     "@psirenny/babel-preset": "1.0.0",
     "@psirenny/eslint-config": "1.0.2",
     "@psirenny/tools": "1.0.2",
-    "babel-eslint": "8.2.6",
+    "babel-eslint": "9.0.0",
     "dictionary-en-us": "2.0.0",
     "eslint": "5.4.0",
     "eslint-config-airbnb-base": "13.1.0",
