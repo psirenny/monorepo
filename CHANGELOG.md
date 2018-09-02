@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/psirenny/monorepo/compare/v1.0.2...v1.1.0) (2018-09-02)
+
+
+### Bug Fixes
+
+* **package:** update browserslist to version 4.0.0 ([542a961](https://github.com/psirenny/monorepo/commit/542a961))
+* **package:** update rollup to version 0.62.0 ([10ff567](https://github.com/psirenny/monorepo/commit/10ff567))
+* **package:** update yargs to version 12.0.1 ([d5d8397](https://github.com/psirenny/monorepo/commit/d5d8397))
+* set git email and name in circleci pull requests ([51efeb2](https://github.com/psirenny/monorepo/commit/51efeb2))
+
+
+### Features
+
+* add browserslist config and dictionary ([7ed9a19](https://github.com/psirenny/monorepo/commit/7ed9a19))
+
+
+
 <a name="1.0.2"></a>
 ## [1.0.2](https://github.com/psirenny/monorepo/compare/v1.0.1...v1.0.2) (2018-06-23)
 
