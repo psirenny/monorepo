@@ -1,10 +1,7 @@
 // @flow
 
 export type BuildPlatform = (
-  | 'all'
-  | 'web'
-  | 'webApple'
-  | 'webAppleIos'
-  | 'webAppleMacos'
+  | 'ios'
+  | 'macos'
   | 'node'
 );

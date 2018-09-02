@@ -8,8 +8,8 @@
 import { join as pathJoin, resolve as pathResolve } from 'path';
 import yargs from 'yargs';
 import build from './build';
-import buildPlatforms from './platforms';
-import getBuildVariantsFromPlatforms from './get-variants-from-platforms';
+import buildGetVariantsByPlatformAliases from './get-variants-by-platform-aliases';
+import buildPlatformAliases from './platform-aliases';
 
 yargs
   .option('cwd', {
@@ -33,11 +33,16 @@ yargs
       description: 'Set destination directory',
       type: 'string',
     })
-    .option('platforms', {
+    .option('bootstrap', {
+      default: false,
+      description: 'Enable to self-build',
+      type: 'boolean',
+    })
+    .option('platform-aliases', {
       array: true,
-      choices: buildPlatforms,
+      choices: buildPlatformAliases,
       demandOption: true,
-      description: 'Add build platform',
+      description: 'Add platform alias',
     }),
   )
   .demandCommand(1)
@@ -46,16 +51,17 @@ yargs
 const [cmd] = yargs.argv._;
 
 if (cmd === 'build') {
-  const { cwd, platforms } = yargs.argv;
+  const { cwd, platformAliases } = yargs.argv;
 
   // $FlowFixMe
   const pkg = require(`${cwd}/package.json`);
 
   const buildOpts = {
+    bootstrap: yargs.argv.bootstrap,
     destDir: yargs.argv.destDir,
     pkgName: pkg.name,
     srcDir: yargs.argv.srcDir,
-    variants: getBuildVariantsFromPlatforms(platforms),
+    variants: buildGetVariantsByPlatformAliases(platformAliases),
   };
 
   build(buildOpts, (err) => {

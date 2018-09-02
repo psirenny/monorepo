@@ -3,7 +3,7 @@
 export type BuildFormat = (
   | 'amd'
   | 'cjs'
-  | 'es'
+  | 'esm'
   | 'iife'
   | 'system'
   | 'umd'

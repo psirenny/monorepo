@@ -1,0 +1,5 @@
+{
+  "presets": [
+    ["@psirenny/babel-preset"]
+  ]
+}

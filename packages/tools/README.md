@@ -1,3 +1,3 @@
-# @psirenny/tools
+# `@psirenny/tools`
 
 Tools to manage this monorepo.

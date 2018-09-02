@@ -1,7 +1,6 @@
 // @flow
 
-export default [
-  'node 6.14.2',
-  'node 8.11.11',
-  'node 10.1.0',
-];
+import createVersions from './create-versions';
+import queries from './queries_node';
+
+export default createVersions('node', queries, true);

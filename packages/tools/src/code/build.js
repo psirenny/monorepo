@@ -1,15 +1,10 @@
 // @flow
 
 import asyncEach from 'async/each';
+import asyncEachLimit from 'async/eachLimit';
 import asyncParallel from 'async/parallel';
 import { minify as terserMinify } from 'terser';
-
-import {
-  copy as fsExtraCopy,
-  ensureDir as fsExtraEnsureDir,
-  remove as fsExtraRemove,
-} from 'fs-extra';
-
+import { copy as fsExtraCopy, ensureDir as fsExtraEnsureDir, remove as fsExtraRemove } from 'fs-extra';
 import klaw from 'klaw';
 import _camelCase from 'lodash/fp/camelCase';
 import _mapKeys from 'lodash/fp/mapKeys';
@@ -24,11 +19,16 @@ import {
 } from 'path';
 
 import { rollup as rollupBundle } from 'rollup';
+import rollupPluginAlias from 'rollup-plugin-alias';
 import rollupPluginBabel from 'rollup-plugin-babel';
+import rollupPluginCommonjs from 'rollup-plugin-commonjs';
 import rollupPluginHashbang from 'rollup-plugin-hashbang';
+import rollupPluginJson from 'rollup-plugin-json';
+import rollupPluginNodeResolve from 'rollup-plugin-node-resolve';
 import rollupPluginReplace from 'rollup-plugin-replace';
 import rollupPluginString from 'rollup-plugin-string/dist/rollup-plugin-string';
-import { uglify as rollupPluginUglify } from 'rollup-plugin-uglify';
+import { terser as rollupPluginTerser } from 'rollup-plugin-terser';
+import babelPreset from '../../../babel-preset/src';
 import type { BuildVariant } from '../types/flow/BuildVariant';
 
 type ConfigGetBabelOptions = (variant: BuildVariant, srcPath: string) => { [string]: any };
@@ -38,7 +38,10 @@ type ConfigGetRollupExternal = (variant: BuildVariant, srcPath: string) => (modu
 type ConfigGetRollupInputOptions = (variant: BuildVariant, srcPath: string) => any;
 type ConfigGetRollupOutputOptions = (variant: BuildVariant, srcPath: string) => any;
 type ConfigGetRollupPluginBabelOptions = (variant: BuildVariant, srcPath: string) => any[];
+type ConfigGetRollupPluginCommonjsOptions = (variant: BuildVariant, srcPath: string) => any;
 type ConfigGetRollupPluginHashbangOptions = (variant: BuildVariant, srcPath: string) => any;
+type ConfigGetRollupPluginJsonOptions = (variant: BuildVariant, srcPath: string) => any;
+type ConfigGetRollupPluginNodeResolveOptions = (variant: BuildVariant, srcPath: string) => any;
 type ConfigGetRollupPluginReplaceOptions = (variant: BuildVariant, srcPath: string) => any;
 type ConfigGetRollupPluginStringOptions = (variant: BuildVariant, srcPath: string) => any;
 type ConfigGetRollupPluginTerserOptions = (variant: BuildVariant, srcPath: string) => ?any[];
@@ -46,6 +49,7 @@ type ConfigGetRollupPlugins = (variant: BuildVariant, srcPath: string) => ?any[]
 type ConfigGetTerserOptions = (variant: BuildVariant, srcPath: string) => ?{ [string]: any };
 
 type Config = {
+  bootstrap?: boolean,
   destDir?: string,
   getBabelOptions?: ConfigGetBabelOptions,
   getNativeFileTypes?: ConfigGetNativeFileTypes,
@@ -54,7 +58,10 @@ type Config = {
   getRollupInputOptions?: (variant: BuildVariant, srcPath: string) => any,
   getRollupOutputOptions?: (variant: BuildVariant, srcPath: string) => any,
   getRollupPluginBabelOptions?: ConfigGetRollupPluginBabelOptions,
+  getRollupPluginCommonjsOptions?: ConfigGetRollupPluginCommonjsOptions,
   getRollupPluginHashbangOptions?: ConfigGetRollupPluginHashbangOptions,
+  getRollupPluginJsonOptions?: ConfigGetRollupPluginJsonOptions,
+  getRollupPluginNodeResolveOptions?: ConfigGetRollupPluginNodeResolveOptions,
   getRollupPluginReplaceOptions?: ConfigGetRollupPluginReplaceOptions,
   getRollupPluginStringOptions?: ConfigGetRollupPluginStringOptions,
   getRollupPluginTerserOptions?: ConfigGetRollupPluginTerserOptions,
@@ -75,7 +82,10 @@ type ConfigWithDefaults = {
   getRollupInputOptions: ConfigGetRollupInputOptions,
   getRollupOutputOptions: ConfigGetRollupOutputOptions,
   getRollupPluginBabelOptions: ConfigGetRollupPluginBabelOptions,
+  getRollupPluginCommonjsOptions: ConfigGetRollupPluginJsonOptions,
   getRollupPluginHashbangOptions: ConfigGetRollupPluginHashbangOptions,
+  getRollupPluginJsonOptions: ConfigGetRollupPluginJsonOptions,
+  getRollupPluginNodeResolveOptions: ConfigGetRollupPluginNodeResolveOptions,
   getRollupPluginReplaceOptions: ConfigGetRollupPluginReplaceOptions,
   getRollupPluginStringOptions: ConfigGetRollupPluginStringOptions,
   getRollupPluginTerserOptions: ConfigGetRollupPluginTerserOptions,
@@ -95,7 +105,7 @@ const defaultGetBabelOptions = (variant: BuildVariant) => {
   const opts = {
     plugins: [],
     presets: [
-      ['@psirenny/babel-preset', {
+      [babelPreset, {
         modules: false,
         targets: variant.targets,
       }],
@@ -145,11 +155,26 @@ const defaultCreateGetTerserOptions = (terserCache: { [string]: string }) => (
   )
 );
 
-const defaultCreateGetRollupExternal = (getNativeFileTypes: ConfigGetNativeFileTypes) => (
+const defaultCreateGetRollupExternal = (cfg: Config, getNativeFileTypes: ConfigGetNativeFileTypes) => (
   (variant: BuildVariant, srcPath: string) => (
     (modulePath: string) => {
-      if (modulePath === srcPath) return false;
-      if (modulePath.startsWith('\0')) return false;
+      if (cfg.bootstrap) {
+        if (modulePath.includes('@psirenny/dictionary')) return false;
+        if (modulePath.includes('monorepo/packages/dictionary')) return false;
+        if (modulePath.includes('/babel-preset')) return false;
+        if (modulePath.includes('/browserslist-config')) return false;
+        if (modulePath.includes('/eslint-config')) return false;
+        if (modulePath.includes('/remark-preset')) return false;
+        if (modulePath.includes('/retext-preset')) return false;
+      }
+
+      if (modulePath === srcPath) {
+        return false;
+      }
+
+      if (modulePath.startsWith('\0')) {
+        return false;
+      }
 
       const nativeFileTypes = getNativeFileTypes(variant, srcPath);
 
@@ -172,13 +197,19 @@ const defaultCreateGetRollupPluginBabelOptions = (getBabelOptions: ConfigGetBabe
   }]
 );
 
+const defaultCreateGetRollupPluginCommonjsOptions = () => () => null;
+
 const defaultCreateGetRollupPluginHashbangOptions = () => (
   (variant: BuildVariant, srcPath: string) => {
     const srcPathSegs = srcPath.split(pathSep);
-    const srcIsCli = srcPathSegs.includes('cli.js') || srcPathSegs.includes('cli');
+    const srcIsCli = srcPathSegs.includes('cli.babel.js') || srcPathSegs.includes('cli.js') || srcPathSegs.includes('cli');
     return srcIsCli ? [] : false;
   }
 );
+
+const defaultCreateGetRollupPluginJsonOptions = () => () => ({});
+
+const defaultCreateGetRollupPluginNodeResolveOptions = () => () => ({});
 
 const defaultCreateGetRollupPluginReplaceOptions = (getReplaceOptions: ConfigGetReplaceOptions) => (
   (variant: BuildVariant, srcPath: string) => {
@@ -202,8 +233,12 @@ const defaultCreateGetRollupPluginTerserOptions = (getTerserOptions: ConfigGetTe
 );
 
 const defaultCreateGetRollupPlugins = (
+  cfg: Config,
   getRollupPluginBabelOptions: ConfigGetRollupPluginBabelOptions,
+  getRollupPluginCommonjsOptions: ConfigGetRollupPluginCommonjsOptions,
   getRollupPluginHashbangOptions: ConfigGetRollupPluginHashbangOptions,
+  getRollupPluginJsonOptions: ConfigGetRollupPluginJsonOptions,
+  getRollupPluginNodeResolveOptions: ConfigGetRollupPluginNodeResolveOptions,
   getRollupPluginReplaceOptions: ConfigGetRollupPluginReplaceOptions,
   getRollupPluginStringOptions: ConfigGetRollupPluginStringOptions,
   getRollupPluginTerserOptions: ConfigGetRollupPluginTerserOptions,
@@ -211,10 +246,27 @@ const defaultCreateGetRollupPlugins = (
   (variant: BuildVariant, srcPath: string) => {
     const plugins = [];
     const pluginBabelOpts = getRollupPluginBabelOptions(variant, srcPath);
+    const pluginCommonjsOpts = getRollupPluginCommonjsOptions(variant, srcPath);
     const pluginHashbangOpts = getRollupPluginHashbangOptions(variant, srcPath);
+    const pluginJsonOpts = getRollupPluginJsonOptions(variant, srcPath);
+    const pluginNodeResolveOpts = getRollupPluginNodeResolveOptions(variant, srcPath);
     const pluginReplaceOpts = getRollupPluginReplaceOptions(variant, srcPath);
     const pluginStringOpts = getRollupPluginStringOptions(variant, srcPath);
     const pluginTerserOpts = getRollupPluginTerserOptions(variant, srcPath);
+
+    if (cfg.bootstrap) {
+      plugins.push(rollupPluginAlias({
+        '@psirenny/dictionary': pathJoin(__dirname, '../../../dictionary/src/index.js'),
+        '@psirenny/retext-preset': pathJoin(__dirname, '../../../retext-preset/src/index.js'),
+      }));
+    }
+
+    if (pluginJsonOpts) {
+      plugins.push(rollupPluginJson.apply(
+        rollupPluginJson,
+        pluginJsonOpts,
+      ));
+    }
 
     if (pluginStringOpts) {
       plugins.push(rollupPluginString.apply(
@@ -230,6 +282,12 @@ const defaultCreateGetRollupPlugins = (
       ));
     }
 
+    if (cfg.bootstrap) {
+      plugins.push(rollupPluginCommonjs({
+        include: /babel-preset/,
+      }));
+    }
+
     if (pluginBabelOpts) {
       const [opts, ...restOpts] = pluginBabelOpts;
       const mergedOpts = [{ ...opts, babelrc: false }, ...restOpts];
@@ -243,12 +301,27 @@ const defaultCreateGetRollupPlugins = (
     if (pluginHashbangOpts) {
       plugins.push(rollupPluginHashbang.apply(
         rollupPluginHashbang,
+        pluginCommonjsOpts,
+      ));
+    }
+
+    if (pluginNodeResolveOpts) {
+      plugins.push(rollupPluginNodeResolve.apply(
+        rollupPluginNodeResolve,
+        pluginNodeResolveOpts,
+      ));
+    }
+
+    if (pluginCommonjsOpts) {
+      plugins.push(rollupPluginCommonjs.apply(
+        rollupPluginCommonjs,
+        pluginCommonjsOpts,
       ));
     }
 
     if (pluginTerserOpts) {
-      plugins.push(rollupPluginUglify.apply(
-        rollupPluginUglify,
+      plugins.push(rollupPluginTerser.apply(
+        rollupPluginTerser,
         pluginTerserOpts,
       ));
     }
@@ -289,17 +362,24 @@ const mergeDefaultConfig = (cfg: Config): ConfigWithDefaults => {
   const getBabelOptions = cfg.getBabelOptions || defaultGetBabelOptions;
   const getNativeFileTypes = cfg.getNativeFileTypes || defaultGetNativeFileTypes;
   const getReplaceOptions = cfg.getReplaceOptions || defaultGetReplaceOptions;
-  const getRollupExternal = cfg.getRollupExternal || defaultCreateGetRollupExternal(getNativeFileTypes);
+  const getRollupExternal = cfg.getRollupExternal || defaultCreateGetRollupExternal(cfg, getNativeFileTypes);
   const getRollupPluginBabelOptions = cfg.getRollupPluginBabelOptions || defaultCreateGetRollupPluginBabelOptions(getBabelOptions);
-  const getRollupPluginTerserOptions = cfg.getRollupPluginTerserOptions || defaultCreateGetRollupPluginTerserOptions(getTerserOptions);
+  const getRollupPluginCommonjsOptions = cfg.getRollupPluginCommonjsOptions || defaultCreateGetRollupPluginCommonjsOptions();
   const getRollupPluginHashbangOptions = cfg.getRollupPluginHashbangOptions || defaultCreateGetRollupPluginHashbangOptions();
+  const getRollupPluginJsonOptions = cfg.getRollupPluginJsonOptions || defaultCreateGetRollupPluginJsonOptions();
+  const getRollupPluginNodeResolveOptions = cfg.getRollupPluginNodeResolveOptions || defaultCreateGetRollupPluginNodeResolveOptions();
   const getRollupPluginReplaceOptions = cfg.getRollupPluginReplaceOptions || defaultCreateGetRollupPluginReplaceOptions(getReplaceOptions);
   const getRollupPluginStringOptions = cfg.getRollupPluginStringOptions || defaultCreateGetRollupPluginStringOptions(getNativeFileTypes);
+  const getRollupPluginTerserOptions = cfg.getRollupPluginTerserOptions || defaultCreateGetRollupPluginTerserOptions(getTerserOptions);
   const getRollupOutputOptions = cfg.getRollupOutputOptions || defaultCreateGetRollupOutputOptions(cfg.pkgName);
 
   const getRollupPlugins = cfg.getRollupPlugins || defaultCreateGetRollupPlugins(
+    cfg,
     getRollupPluginBabelOptions,
+    getRollupPluginCommonjsOptions,
     getRollupPluginHashbangOptions,
+    getRollupPluginJsonOptions,
+    getRollupPluginNodeResolveOptions,
     getRollupPluginReplaceOptions,
     getRollupPluginStringOptions,
     getRollupPluginTerserOptions,
@@ -319,7 +399,10 @@ const mergeDefaultConfig = (cfg: Config): ConfigWithDefaults => {
     getRollupInputOptions,
     getRollupOutputOptions,
     getRollupPluginBabelOptions,
+    getRollupPluginCommonjsOptions,
     getRollupPluginHashbangOptions,
+    getRollupPluginJsonOptions,
+    getRollupPluginNodeResolveOptions,
     getRollupPluginReplaceOptions,
     getRollupPluginStringOptions,
     getRollupPluginTerserOptions,
@@ -339,7 +422,7 @@ const buildSrc = (config: Config) => {
     const relPath = srcPath.replace(cfg.srcDir, '');
     const destDir = cfg.destDir || pathJoin(cfg.srcDir, '../dist');
 
-    asyncEach(cfg.variants, (variant, done0) => {
+    asyncEachLimit(cfg.variants, 10, (variant, done0) => {
       const destPath = pathJoin(destDir, variant.subpath, relPath);
 
       fsExtraEnsureDir(pathDirname(destPath), (ensureDirErr) => {
@@ -366,7 +449,7 @@ const buildSrc = (config: Config) => {
                 rollupBundle(rollupInputOpts)
                   .catch(err => done1(err))
                   .then(bundle => {
-                    if (bundle.exports.length) {
+                    if (bundle && bundle.exports.length) {
                       bundle.write(rollupOutputOpts)
                         .catch(err => done1(err))
                         .then(() => done1());

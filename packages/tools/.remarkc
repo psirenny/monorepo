@@ -1,0 +1,5 @@
+{
+  "plugins": [
+    "./dist/node/tag/maintenance/cjs/debug/code/internal/remark-preset"
+  ]
+}

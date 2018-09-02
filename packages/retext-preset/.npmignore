@@ -3,3 +3,4 @@
 .eslintignore
 .eslintrc
 .flowconfig
+.remarkrc

@@ -1,10 +1,10 @@
 // @flow
 
 import type { BuildVariant } from '../types/flow/BuildVariant';
-import variantsWeb from './variants_web';
 import variantsNode from './variants_node';
+import variantsWeb from './variants_web';
 
 export default ([
-  ...variantsWeb,
   ...variantsNode,
+  ...variantsWeb,
 ]: BuildVariant[]);

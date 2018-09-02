@@ -2,6 +2,7 @@
 
 /* eslint-disable import/prefer-default-export */
 
+import dictionary from '@psirenny/dictionary';
 import dictionaryEnUs from 'dictionary-en-us';
 import retextAssuming from 'retext-assuming';
 import retextContractions from 'retext-contractions';
@@ -22,11 +23,6 @@ import retextSpell from 'retext-spell';
 import retextSyntaxMentions from 'retext-syntax-mentions';
 import retextSyntaxUrls from 'retext-syntax-urls';
 
-const dictionaryExo = `
-  monorepo
-  psirenny
-`;
-
 export const plugins = [
   [retextEnglish],
   [retextAssuming],
@@ -45,5 +41,5 @@ export const plugins = [
   [retextSimplify],
   [retextSyntaxMentions],
   [retextSyntaxUrls],
-  [retextSpell, { dictionary: dictionaryEnUs, personal: dictionaryExo }],
+  [retextSpell, { dictionary: dictionaryEnUs, personal: dictionary }],
 ];

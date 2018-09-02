@@ -5,6 +5,6 @@ import type { BuildFormat } from '../types/flow/BuildFormat';
 export default ([
   'amd',
   'cjs',
-  'es',
+  'esm',
   'system',
 ]: BuildFormat[]);
