@@ -1,7 +1,7 @@
 {
   "name": "@psirenny/remark-preset",
   "description": "psirenny's remark config",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Dennis Torres <djtorres0@gmail.com>",
   "bugs": {
     "url": "https://github.com/psirenny/monorepo/issues"
@@ -30,7 +30,7 @@
     "@babel/plugin-syntax-import-meta": "7.0.0",
     "@babel/preset-env": "7.0.0",
     "@babel/preset-flow": "7.0.0",
-    "@psirenny/retext-preset": "1.0.2",
+    "@psirenny/retext-preset": "1.0.3",
     "@psirenny/tools": "1.0.2",
     "babel-eslint": "9.0.0",
     "dictionary-en-us": "2.0.0",
@@ -96,7 +96,7 @@
   "license": "Unlicense",
   "main": "dist/node/tag/maintenance/cjs/debug/index.js",
   "peerDependencies": {
-    "@psirenny/retext-preset": "1.0.0",
+    "@psirenny/retext-preset": "1.0.3",
     "remark-lint-blockquote-indentation": "1.0.2",
     "remark-lint-checkbox-character-style": "1.0.2",
     "remark-lint-code-block-style": "1.0.2",
@@ -114,9 +114,6 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "remarkConfig": {
-    "rcPath": "../tools/dist/node/tag/maintenance/cjs/debug/code/internal/remark-preset.js"
   },
   "repository": {
     "type": "git",
