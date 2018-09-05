@@ -123,7 +123,7 @@
     "audit": "nsp check",
     "build": "node_modules/@psirenny/tools/dist/node/tag/maintenance/cjs/debug/code/cli.js build --platform-aliases node",
     "check": "npm-run-all audit fixpack typecheck lint",
-    "clean": "trash dist node_modules",
+    "clean": "trash **.DS_Store *.log dist dist node_modules",
     "fix": "npm-run-all fixpack",
     "fixpack": "fixpack",
     "lint": "npm-run-all lint:js lint:md",
