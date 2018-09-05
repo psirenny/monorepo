@@ -10,7 +10,8 @@
     "version": {
       "allowBranch": "master",
       "conventionalCommits": true,
-      "exact": true
+      "exact": true,
+      "message": "chore: release"
     }
   },
   "npmClient": "yarn",
