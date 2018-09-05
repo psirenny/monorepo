@@ -5,6 +5,7 @@ export default `
   Greenkeeper
   browserslist
   config
+  GraphQL
   iOS
   macOS
   monorepo
