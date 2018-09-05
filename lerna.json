@@ -6,6 +6,11 @@
     "publish": {
       "allowBranch": "master",
       "conventionalCommits": true
+    },
+    "version": {
+      "allowBranch": "master",
+      "conventionalCommits": true,
+      "exact": true
     }
   },
   "npmClient": "yarn",

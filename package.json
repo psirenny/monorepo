@@ -56,7 +56,7 @@
     "outdated:pkgs": "lerna run outdated",
     "outdated:self": "ncu",
     "publish": "lerna publish",
-    "release": "standard-version",
+    "release": "lerna version",
     "update": "npm-run-all update:self update:pkgs",
     "update:pkgs": "lerna run update",
     "update:self": "ncu -u"
