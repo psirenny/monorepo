@@ -1,7 +1,7 @@
 {
   "name": "@psirenny/browserslist-config-web_ios",
   "description": "psirenny's web iOS browserslist config",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "author": "Dennis Torres <djtorres0@gmail.com>",
   "bugs": {
     "url": "https://github.com/psirenny/monorepo/issues"
@@ -30,7 +30,7 @@
     "@babel/plugin-syntax-import-meta": "7.0.0",
     "@babel/preset-env": "7.0.0",
     "@babel/preset-flow": "7.0.0",
-    "@psirenny/tools": "1.1.0",
+    "@psirenny/tools": "1.2.0",
     "babel-eslint": "9.0.0",
     "dictionary-en-us": "2.0.0",
     "eslint": "5.5.0",

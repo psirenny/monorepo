@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/psirenny/monorepo/tree/master/packages/retext-preset/compare/@psirenny/retext-preset@1.1.0...@psirenny/retext-preset@1.2.0) (2018-09-06)
+
+
+### Features
+
+* **eslint-config:** add eslint-config rule ([b32c61a](https://github.com/psirenny/monorepo/tree/master/packages/retext-preset/commit/b32c61a))
+
+
+
+
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/psirenny/monorepo/tree/master/packages/retext-preset/compare/@psirenny/retext-preset@1.0.2...@psirenny/retext-preset@1.1.0) (2018-09-05)
 
