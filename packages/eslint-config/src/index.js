@@ -2,12 +2,19 @@
 
 export default {
   extends: [
+    'plugin:eslint-plugin/recommended',
     'eslint-config-airbnb-base',
     'plugin:flowtype/recommended',
     'plugin:ava/recommended',
   ],
   parser: 'babel-eslint',
-  plugins: ['babel', 'flowtype', 'ava', 'markdown'],
+  plugins: [
+    'eslint-plugin',
+    'babel',
+    'flowtype',
+    'ava',
+    'markdown',
+  ],
   rules: {
     'arrow-parens': 0,
     'function-paren-newline': [0, 'consistent'],
