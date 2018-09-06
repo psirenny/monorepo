@@ -5,7 +5,9 @@
     },
     "publish": {
       "allowBranch": "master",
-      "conventionalCommits": true
+      "conventionalCommits": true,
+      "exact": true,
+      "message": "chore: release"
     },
     "version": {
       "allowBranch": "master",
