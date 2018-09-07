@@ -15,6 +15,7 @@ export default (platform: BuildPlatform, queries: BuildQuery, useSemver: boolean
 
     if (!tag.startsWith('_')) {
       versions.push({
+        isSemver: false,
         isTag: true,
         name: tag,
         platform,
@@ -31,30 +32,12 @@ export default (platform: BuildPlatform, queries: BuildQuery, useSemver: boolean
     const semverPatch = target.split(' ')[1];
 
     versions.push({
+      isSemver: true,
       isTag: false,
       name: semverPatch,
       platform,
       targets: target,
     });
-
-    if (useSemver) {
-      const semverMinor = semverPatch.split('.').slice(0, 2).join('.');
-      const semverMajor = semverPatch.split('.').slice(0, 1).join('.');
-
-      versions.push({
-        isTag: false,
-        name: semverMinor,
-        platform,
-        targets: target,
-      });
-
-      versions.push({
-        isTag: false,
-        name: semverMajor,
-        platform,
-        targets: target,
-      });
-    }
   });
 
   return versions;

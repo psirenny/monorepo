@@ -107,7 +107,7 @@ const defaultGetBabelOptions = (variant: BuildVariant) => {
     presets: [
       [babelPreset, {
         modules: false,
-        targets: variant.targets,
+        targets: variant.version.targets,
       }],
     ],
   };
@@ -423,48 +423,86 @@ const buildSrc = (config: Config) => {
     const destDir = cfg.destDir || pathJoin(cfg.srcDir, '../dist');
 
     asyncEachLimit(cfg.variants, 10, (variant, done0) => {
-      const destPath = pathJoin(destDir, variant.subpath, relPath);
+      const origDestPath = pathJoin(
+        destDir,
+        variant.version.platform,
+        variant.version.isTag ? 'tag' : 'v',
+        variant.version.name,
+        variant.format,
+        variant.mode,
+        relPath,
+      );
 
-      fsExtraEnsureDir(pathDirname(destPath), (ensureDirErr) => {
-        if (ensureDirErr) return done0(ensureDirErr);
+      const semverVersions = !variant.version.isSemver ? [] : [
+        variant.version.name.split('.').slice(0, 2).join('.'),
+        variant.version.name.split('.').slice(0, 1).join('.'),
+      ];
 
-        switch (pathExtname(srcPath)) {
-          case '':
-            return null;
-          case '.js':
-            return asyncParallel([
-              (done1) => fsExtraCopy(srcPath, `${destPath}.flow`, done1),
-              (done1) => {
-                const rollupInputOpts = {
-                  ...cfg.getRollupInputOptions(variant, srcPath),
-                  input: srcPath,
-                };
+      const semverDestPaths = semverVersions.map(
+        semverVersion => pathJoin(
+          destDir,
+          variant.version.platform,
+          variant.version.isTag ? 'tag' : 'v',
+          semverVersion,
+          variant.format,
+          variant.mode,
+          relPath,
+        )
+      );
 
-                const rollupOutputOpts = {
-                  ...cfg.getRollupOutputOptions(variant, srcPath),
-                  file: destPath,
-                  format: variant.format,
-                };
+      const destPaths = [
+        origDestPath,
+        ...semverDestPaths,
+      ];
 
-                rollupBundle(rollupInputOpts)
-                  .catch(err => done1(err))
-                  .then(bundle => {
-                    if (bundle && bundle.exports.length) {
-                      bundle.write(rollupOutputOpts)
+      asyncEach(
+        destPaths,
+        (destPath, done1) => fsExtraEnsureDir(pathDirname(destPath), done1),
+        (ensureDirsErr) => {
+          if (ensureDirsErr) return done0(ensureDirsErr);
+
+          switch (pathExtname(srcPath)) {
+            case '':
+              return null;
+            case '.js':
+              return asyncParallel([
+                (done1) => fsExtraCopy(srcPath, `${origDestPath}.flow`, done1),
+                (done1) => {
+                  const rollupInputOpts = {
+                    ...cfg.getRollupInputOptions(variant, srcPath),
+                    input: srcPath,
+                  };
+
+                  const rollupOutputOpts = {
+                    ...cfg.getRollupOutputOptions(variant, srcPath),
+                    file: origDestPath,
+                    format: variant.format,
+                  };
+
+                  rollupBundle(rollupInputOpts)
+                    .catch(err => done1(err))
+                    .then(bundle => {
+                      if (!bundle?.exports.length) return done1();
+
+                      return bundle.write(rollupOutputOpts)
                         .catch(err => done1(err))
-                        .then(() => done1());
-                    }
-                  });
-              },
-            ], done0);
-          default:
-            return fsExtraCopy(
-              srcPath,
-              destPath,
-              done0,
-            );
-        }
-      });
+                        .then(() => asyncEach(
+                          semverDestPaths,
+                          (semverDestPath, done2) => fsExtraCopy(origDestPath, semverDestPath, done2),
+                          done1,
+                        ));
+                    });
+                },
+              ], done0);
+            default:
+              return asyncEach(
+                destPaths,
+                (destPath, done1) => fsExtraCopy(srcPath, destPath, done1),
+                done0,
+              );
+          }
+        },
+      );
     }, cb);
   };
 };

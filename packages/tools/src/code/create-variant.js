@@ -14,8 +14,5 @@ type Options = {
 export default (opts: Options): BuildVariant => ({
   format: opts.format,
   mode: opts.mode,
-  platform: opts.version.platform,
-  subpath: `${opts.version.platform}/${opts.version.isTag ? 'tag' : 'v'}/${opts.version.name}/${opts.format}/${opts.mode}`,
-  targets: opts.version.targets,
-  version: opts.version.name,
+  version: opts.version,
 });
