@@ -9,10 +9,10 @@ export default {
   ],
   parser: 'babel-eslint',
   plugins: [
+    'ava',
     'eslint-plugin',
     'babel',
     'flowtype',
-    'ava',
     'markdown',
   ],
   rules: {

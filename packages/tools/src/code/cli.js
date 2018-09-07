@@ -5,6 +5,7 @@
 /* eslint-disable global-require */
 /* eslint-disable import/no-dynamic-require */
 
+import npmlog from 'npmlog';
 import { join as pathJoin, resolve as pathResolve } from 'path';
 import yargs from 'yargs';
 import build from './build';
@@ -59,6 +60,7 @@ if (cmd === 'build') {
   const buildOpts = {
     bootstrap: yargs.argv.bootstrap,
     destDir: yargs.argv.destDir,
+    logger: npmlog,
     pkgName: pkg.name,
     srcDir: yargs.argv.srcDir,
     variants: buildGetVariantsByPlatformAliases(platformAliases),
