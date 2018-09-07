@@ -1,5 +1,4 @@
 *.log
-.babelrc
 .eslintignore
 .eslintrc
 .flowconfig
