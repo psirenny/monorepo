@@ -423,7 +423,7 @@ const buildSrc = (config: Config) => {
     const relPath = srcPath.replace(cfg.srcDir, '');
     const destDir = cfg.destDir || pathJoin(cfg.srcDir, '../dist');
 
-    cfg.logger.log('info', `Found source file: “${cfg.srcDir}”`);
+    cfg.logger.log('info', (new Date()).toISOString(),`Found source file: “${cfg.srcDir}”`);
 
     asyncEachLimit(cfg.variants, 2, (variant, done0) => {
       const origDestPath = pathJoin(
@@ -461,7 +461,7 @@ const buildSrc = (config: Config) => {
       asyncEach(
         destPaths,
         (destPath, done1) => {
-          cfg.logger.log('info', `Create dest directory: ${pathDirname(destPath)}`);
+          cfg.logger.log('info', (new Date()).toISOString(),`Create dest directory: ${pathDirname(destPath)}`);
           fsExtraEnsureDir(pathDirname(destPath), done1);
         },
         (ensureDirsErr) => {
@@ -469,13 +469,13 @@ const buildSrc = (config: Config) => {
 
           switch (pathExtname(srcPath)) {
             case '':
-              cfg.logger.log('info', `Skip source file: “${srcPath}”`);
+              cfg.logger.log('info', (new Date()).toISOString(),`Skip source file: “${srcPath}”`);
               return null;
             case '.js':
               return asyncParallel([
                 (done1) => {
                   const destPath = `${origDestPath}.flow`;
-                  cfg.logger.log('info', `Create flow typedef file: ${destPath}`);
+                  cfg.logger.log('info', (new Date()).toISOString(),`Create flow typedef file: ${destPath}`);
                   fsExtraCopy(srcPath, destPath, done1);
                 },
                 (done1) => {
@@ -495,14 +495,14 @@ const buildSrc = (config: Config) => {
                     .then(bundle => {
                       if (!bundle?.exports.length) return done1();
 
-                      cfg.logger.log('info', `Build source file: ${origDestPath}`);
+                      cfg.logger.log('info', (new Date()).toISOString(),`Build source file: ${origDestPath}`);
 
                       return bundle.write(rollupOutputOpts)
                         .catch(err => done1(err))
                         .then(() => asyncEach(
                           semverDestPaths,
                           (semverDestPath, done2) => {
-                            cfg.logger.log('info', `Copy patch version: “${semverDestPath}”`);
+                            cfg.logger.log('info', (new Date()).toISOString(),`Copy patch version: “${semverDestPath}”`);
                             fsExtraCopy(origDestPath, semverDestPath, done2);
                           },
                           done1,
@@ -514,7 +514,7 @@ const buildSrc = (config: Config) => {
               return asyncEach(
                 destPaths,
                 (destPath, done1) => {
-                  cfg.logger.log('info', `Copy source file: “${destPath}”`);
+                  cfg.logger.log('info', (new Date()).toISOString(),`Copy source file: “${destPath}”`);
                   fsExtraCopy(srcPath, destPath, done1);
                 },
                 done0,
@@ -531,12 +531,12 @@ const build = (cfg: Config, cb: Callback) => {
   const buildSrcPath = buildSrc(cfg);
   const distDir = pathJoin(cfg.srcDir, '../dist');
 
-  cfg.logger.log('info', `Remove previous dist “${distDir}“`);
+  cfg.logger.log('info', (new Date()).toISOString(),`Remove previous dist “${distDir}“`);
 
   fsExtraRemove(distDir, (cleanErr) => {
     if (cleanErr) return cb(cleanErr);
 
-    cfg.logger.log('info', `Search source files`);
+    cfg.logger.log('info', (new Date()).toISOString(),`Search source files`);
 
     return klaw(cfg.srcDir)
       .on('data', (fd) => srcPaths.push(fd.path))
