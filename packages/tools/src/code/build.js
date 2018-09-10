@@ -423,7 +423,7 @@ const buildSrc = (config: Config) => {
     const relPath = srcPath.replace(cfg.srcDir, '');
     const destDir = cfg.destDir || pathJoin(cfg.srcDir, '../dist');
 
-    cfg.logger.log('info', (new Date()).toISOString(),`Found source file: “${cfg.srcDir}”`);
+    cfg.logger.log('info', (new Date()).toISOString(),`Found source file: “${srcPath}”`);
 
     asyncEachLimit(cfg.variants, 2, (variant, done0) => {
       const origDestPath = pathJoin(
