@@ -425,7 +425,7 @@ const buildSrc = (config: Config) => {
 
     cfg.logger.log('info', `Found source file: “${cfg.srcDir}”`);
 
-    asyncEachLimit(cfg.variants, 5, (variant, done0) => {
+    asyncEachLimit(cfg.variants, 2, (variant, done0) => {
       const origDestPath = pathJoin(
         destDir,
         variant.version.platform,
