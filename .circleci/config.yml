@@ -8,8 +8,8 @@ jobs:
       - run: yarn
       - run: yarn run install:pkgs
       - run:
-        command: yarn run build
-        no_output_timeout: 20m
+          command: yarn run build
+          no_output_timeout: 20m
       - run: yarn run ci:precheck
       - run: yarn run check
       - run: yarn run ci:postcheck
