@@ -7,7 +7,9 @@ jobs:
       - checkout
       - run: yarn
       - run: yarn run install:pkgs
-      - run: yarn run build
+      - run:
+        command: yarn run build
+        no_output_timeout: 20m
       - run: yarn run ci:precheck
       - run: yarn run check
       - run: yarn run ci:postcheck
