@@ -3,6 +3,11 @@
     "default": {
       "packages": [
         "package.json",
+        "packages/babel-preset/package.json",
+        "packages/browserslist-config-node/package.json",
+        "packages/browserslist-config-web_ios/package.json",
+        "packages/browserslist-config-web_macos/package.json",
+        "packages/dictionary/package.json",
         "packages/eslint-config/package.json",
         "packages/remark-preset/package.json",
         "packages/retext-preset/package.json",
