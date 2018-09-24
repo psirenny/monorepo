@@ -1,5 +1,6 @@
 module.exports = (_, opts) => ({
   plugins: [
+    ['@babel/plugin-transform-flow-strip-types'],
     ['@babel/plugin-proposal-class-properties', { loose: false }],
     ['@babel/plugin-proposal-decorators', { legacy: true }],
     ['@babel/plugin-proposal-do-expressions'],
@@ -19,9 +20,9 @@ module.exports = (_, opts) => ({
     ['@babel/plugin-proposal-unicode-property-regex'],
     ['@babel/plugin-syntax-dynamic-import'],
     ['@babel/plugin-syntax-import-meta'],
+    ['babel-plugin-preval'],
   ],
   presets: [
     ['@babel/preset-env', { loose: true, shippedProposals: true, ...opts }],
-    ['@babel/preset-flow'],
   ],
 });

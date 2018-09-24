@@ -88,8 +88,9 @@
     "@babel/plugin-proposal-unicode-property-regex": "^7.0.0",
     "@babel/plugin-syntax-dynamic-import": "^7.0.0",
     "@babel/plugin-syntax-import-meta": "^7.0.0",
+    "@babel/plugin-transform-flow-strip-types": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
-    "@babel/preset-flow": "^7.0.0"
+    "babel-plugin-preset": "^3.0.0"
   },
   "publishConfig": {
     "access": "public"
@@ -100,7 +101,7 @@
   },
   "scripts": {
     "audit": "nsp check",
-    "check": "npm-run-all audit fixpack",
+    "check": "npm-run-all audit fixpack lint",
     "clean": "trash **.DS_Store *.log node_modules",
     "fix": "npm-run-all fixpack",
     "fixpack": "fixpack",

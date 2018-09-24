@@ -5,7 +5,7 @@ import type { BuildPlatform } from '../types/flow/BuildPlatform';
 import type { BuildQuery } from '../types/flow/BuildQuery';
 import type { BuildVersion } from '../types/flow/BuildVersion';
 
-export default (platform: BuildPlatform, queries: BuildQuery, useSemver: boolean): BuildVersion[] => {
+export default (platform: BuildPlatform, queries: BuildQuery): BuildVersion[] => {
   const versions: BuildVersion[] = [];
   const allTargets = new Set();
 
