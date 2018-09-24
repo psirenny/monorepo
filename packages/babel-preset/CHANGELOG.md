@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.3.1"></a>
+## [1.3.1](https://github.com/psirenny/monorepo/tree/master/packages/babel-preset/compare/@psirenny/babel-preset@1.3.0...@psirenny/babel-preset@1.3.1) (2018-09-24)
+
+
+### Bug Fixes
+
+* correct babel-plugin-preval peer dependency ([c80ab2b](https://github.com/psirenny/monorepo/tree/master/packages/babel-preset/commit/c80ab2b))
+
+
+
+
+
 <a name="1.3.0"></a>
 # [1.3.0](https://github.com/psirenny/monorepo/tree/master/packages/babel-preset/compare/@psirenny/babel-preset@1.2.0...@psirenny/babel-preset@1.3.0) (2018-09-24)
 
