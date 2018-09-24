@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.3.0"></a>
+# [1.3.0](https://github.com/psirenny/monorepo/tree/master/packages/dictionary/compare/@psirenny/dictionary@1.2.0...@psirenny/dictionary@1.3.0) (2018-09-24)
+
+
+### Features
+
+* add babel-plugin-preval to babel-preset ([ed75f2a](https://github.com/psirenny/monorepo/tree/master/packages/dictionary/commit/ed75f2a))
+
+
+
+
+
 <a name="1.2.0"></a>
 # [1.2.0](https://github.com/psirenny/monorepo/tree/master/packages/dictionary/compare/@psirenny/dictionary@1.1.0...@psirenny/dictionary@1.2.0) (2018-09-06)
 

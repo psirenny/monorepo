@@ -1,7 +1,7 @@
 {
   "name": "@psirenny/tools",
   "description": "psirenny's tools",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "author": "Dennis Torres <djtorres0@gmail.com>",
   "bin": {
     "tools": "dist/node/tag/maintenance/cjs/debug/code/cli.js"

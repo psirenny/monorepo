@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.3.0"></a>
+# [1.3.0](https://github.com/psirenny/monorepo/tree/master/packages/tools/compare/@psirenny/tools@1.2.0...@psirenny/tools@1.3.0) (2018-09-24)
+
+
+### Features
+
+* **tools:** add logger to build tool ([9eb2a3b](https://github.com/psirenny/monorepo/tree/master/packages/tools/commit/9eb2a3b))
+* add babel-plugin-preval to babel-preset ([ed75f2a](https://github.com/psirenny/monorepo/tree/master/packages/tools/commit/ed75f2a))
+
+
+### Performance Improvements
+
+* **tools:** copy major/minor versions from pre-built patch versions ([c3b932a](https://github.com/psirenny/monorepo/tree/master/packages/tools/commit/c3b932a))
+
+
+
+
+
 <a name="1.2.0"></a>
 # [1.2.0](https://github.com/psirenny/monorepo/tree/master/packages/tools/compare/@psirenny/tools@1.1.0...@psirenny/tools@1.2.0) (2018-09-06)
 
