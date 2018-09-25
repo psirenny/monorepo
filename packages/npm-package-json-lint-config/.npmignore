@@ -1,0 +1,6 @@
+*.log
+.babelrc
+.eslintignore
+.eslintrc
+.flowconfig
+.remarkrc

@@ -1,0 +1,3 @@
+{
+  "extends": "../tools/dist/node/tag/maintenance/cjs/debug/code/internal/eslint-config.js"
+}
