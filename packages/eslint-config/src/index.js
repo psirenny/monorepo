@@ -14,6 +14,7 @@ export default {
     'babel',
     'flowtype',
     'markdown',
+    'optimize-regex',
   ],
   rules: {
     'arrow-parens': 0,
@@ -26,6 +27,7 @@ export default {
     'no-duplicate-imports': 0,
     'no-multiple-empty-lines': [2, { max: 1 }],
     'no-underscore-dangle': 0,
+    'optimize-regex/optimize-regex': 2,
     'quote-props': [2, 'consistent-as-needed'],
   },
 };
