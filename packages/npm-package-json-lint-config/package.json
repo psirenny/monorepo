@@ -1,7 +1,7 @@
 {
   "name": "@psirenny/npm-package-json-lint-config",
   "description": "psirenny's eslint config",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Dennis Torres <djtorres0@gmail.com>",
   "bugs": {
     "url": "https://github.com/psirenny/monorepo/issues"

@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.4.0"></a>
+# [1.4.0](https://github.com/psirenny/monorepo/tree/master/packages/eslint-config/compare/@psirenny/eslint-config@1.3.0...@psirenny/eslint-config@1.4.0) (2018-10-01)
+
+
+### Features
+
+* **eslint-config:** add optimize regex ([3752cf4](https://github.com/psirenny/monorepo/tree/master/packages/eslint-config/commit/3752cf4))
+
+
+
+
+
 <a name="1.3.0"></a>
 # [1.3.0](https://github.com/psirenny/monorepo/tree/master/packages/eslint-config/compare/@psirenny/eslint-config@1.2.0...@psirenny/eslint-config@1.3.0) (2018-09-24)
 
