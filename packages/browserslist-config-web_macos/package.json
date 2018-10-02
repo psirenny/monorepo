@@ -96,7 +96,7 @@
   "license": "Unlicense",
   "main": "src/index.js",
   "peerDependencies": {
-    "browserslist": "^4.1.1"
+    "browserslist": "^4.1.2"
   },
   "publishConfig": {
     "access": "public"
