@@ -42,7 +42,7 @@
     "eslint-plugin-eslint-plugin": "1.4.0",
     "eslint-plugin-flowtype": "2.50.0",
     "eslint-plugin-import": "2.14.0",
-    "eslint-plugin-jsx-a11y": "6.1.1",
+    "eslint-plugin-jsx-a11y": "6.1.2",
     "eslint-plugin-markdown": "1.0.0-beta.8",
     "eslint-plugin-optimize-regex": "1.1.6",
     "fixpack": "2.3.1",
