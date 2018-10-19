@@ -27,6 +27,12 @@ export default {
     'no-duplicate-imports': 0,
     'no-multiple-empty-lines': [2, { max: 1 }],
     'no-underscore-dangle': 0,
+    'object-curly-newline': ['error', {
+      ObjectExpression: { consistent: true, minProperties: 5, multiline: true },
+      ObjectPattern: { consistent: true, minProperties: 5, multiline: true },
+      ImportDeclaration: { consistent: true, minProperties: 5, multiline: true },
+      ExportDeclaration: { consistent: true, minProperties: 5, multiline: true },
+    }],
     'optimize-regex/optimize-regex': 2,
     'quote-props': [2, 'consistent-as-needed'],
   },
