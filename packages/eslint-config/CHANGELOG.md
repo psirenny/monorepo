@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.5.0"></a>
+# [1.5.0](https://github.com/psirenny/monorepo/tree/master/packages/eslint-config/compare/@psirenny/eslint-config@1.4.0...@psirenny/eslint-config@1.5.0) (2018-10-19)
+
+
+### Features
+
+* **eslint-config:** allow an additional object prop on a single line ([84e930b](https://github.com/psirenny/monorepo/tree/master/packages/eslint-config/commit/84e930b))
+
+
+
+
+
 <a name="1.4.0"></a>
 # [1.4.0](https://github.com/psirenny/monorepo/tree/master/packages/eslint-config/compare/@psirenny/eslint-config@1.3.0...@psirenny/eslint-config@1.4.0) (2018-10-01)
 
