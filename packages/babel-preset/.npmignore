@@ -1,4 +1,5 @@
 *.log
 .eslintrc
 .eslintignore
+.npmpackagejsonlintrc.json
 .remarkrc

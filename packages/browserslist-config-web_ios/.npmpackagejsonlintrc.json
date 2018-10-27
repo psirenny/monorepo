@@ -1,0 +1,3 @@
+{
+  "extends": "@psirenny/npm-package-json-lint-config"
+}

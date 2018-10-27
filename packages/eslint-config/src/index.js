@@ -35,5 +35,6 @@ export default {
     }],
     'optimize-regex/optimize-regex': 2,
     'quote-props': [2, 'consistent-as-needed'],
+    'sort-imports': 2,
   },
 };

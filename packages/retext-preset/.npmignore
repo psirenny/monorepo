@@ -2,5 +2,8 @@
 .babelrc
 .eslintignore
 .eslintrc
+.flow-coverage
 .flowconfig
+.flowcoveragereportrc
 .remarkrc
+rollup.config.js

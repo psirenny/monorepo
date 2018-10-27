@@ -1,5 +1,5 @@
 {
   "plugins": [
-    "@psirenny/tools/dist/node/tag/maintenance/cjs/debug/code/internal/remark-preset"
+    "../remark-preset"
   ]
 }

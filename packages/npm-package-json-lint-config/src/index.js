@@ -7,10 +7,6 @@ export default {
     'config-type': 'error',
     'cpu-type': 'error',
     'dependencies-type': 'error',
-    'description-format': ['error', {
-      requireCapitalFirstLetter: true,
-      requireEndingPeriod: false,
-    }],
     'description-type': 'error',
     'devDependencies-type': 'error',
     'directories-type': 'error',
