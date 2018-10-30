@@ -1,7 +1,7 @@
 // @flow
 
-import rollupPluginBabel from 'rollup-plugin-babel';
-import rollupPluginFlowEntry from 'rollup-plugin-flow-entry';
+import /* tree-shaking no-side-effects-when-called */ rollupPluginBabel from 'rollup-plugin-babel';
+import /* tree-shaking no-side-effects-when-called */ rollupPluginFlowEntry from 'rollup-plugin-flow-entry';
 
 export default {
   output: [

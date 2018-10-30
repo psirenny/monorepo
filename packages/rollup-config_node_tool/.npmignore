@@ -7,3 +7,4 @@
 .flowcoveragereportrc
 .npmpackagejsonlintrc.json
 .remarkrc
+flow-typed

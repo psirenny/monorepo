@@ -10,4 +10,5 @@ export default `
   macOS
   monorepo
   psirenny
+  rollup
 `;

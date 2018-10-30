@@ -6,4 +6,5 @@
 .flowconfig
 .flowcoveragereportrc
 .remarkrc
+flow-typed
 rollup.config.js

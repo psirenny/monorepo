@@ -7,4 +7,5 @@
 .flowcoveragereportrc
 .npmpackagejsonlintrc.json
 .remarkrc
+flow-typed
 rollup.config.js

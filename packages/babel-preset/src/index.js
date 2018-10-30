@@ -1,3 +1,5 @@
+/* eslint-disable tree-shaking/no-side-effects-in-initialization */
+
 module.exports = (_, opts) => ({
   plugins: [
     ['@babel/plugin-transform-flow-strip-types'],
