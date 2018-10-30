@@ -9,6 +9,9 @@
       "exact": true,
       "message": "chore: release"
     },
+    "run": {
+      "concurrency": 1
+    },
     "version": {
       "allowBranch": "master",
       "conventionalCommits": true,
