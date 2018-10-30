@@ -1,6 +1,6 @@
 {
   "name": "@psirenny/browserslist-config-node",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "psirenny's node browserslist config",
   "author": "Dennis Torres <djtorres0@gmail.com>",
   "bugs": {
