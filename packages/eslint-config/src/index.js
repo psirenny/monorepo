@@ -19,7 +19,6 @@ export default {
     'flowtype',
     'markdown',
     'optimize-regex',
-    'tree-shaking',
   ],
   rules: {
     'arrow-parens': [0],
@@ -41,9 +40,7 @@ export default {
     }],
     'optimize-regex/optimize-regex': [2],
     'quote-props': [2, 'consistent-as-needed'],
-    'sort-imports': [2],
     'sort-keys': [2, 'asc', { natural: true }],
     'sort-vars': [2],
-    'tree-shaking/no-side-effects-in-initialization': [2, { compatibility: 'rollup' }],
   },
 };
