@@ -58,7 +58,7 @@
     "retext-syntax-mentions": "1.1.4",
     "retext-syntax-urls": "1.0.0",
     "trash-cli": "1.4.0",
-    "unified": "7.0.0"
+    "unified": "7.0.1"
   },
   "peerDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.0.0",
