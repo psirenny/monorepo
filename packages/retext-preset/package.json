@@ -111,7 +111,7 @@
     "retext-repeated-words": "^1.2.1",
     "retext-sentence-spacing": "^2.0.1",
     "retext-simplify": "^4.1.1",
-    "retext-spell": "^2.3.1",
+    "retext-spell": "^2.4.0",
     "retext-syntax-mentions": "^1.1.4",
     "retext-syntax-urls": "^1.0.0"
   },
