@@ -113,7 +113,7 @@
     "retext-simplify": "^4.1.1",
     "retext-spell": "^2.3.1",
     "retext-syntax-mentions": "^1.1.4",
-    "retext-syntax-urls": "^1.0.0"
+    "retext-syntax-urls": "^1.0.1"
   },
   "gitHead": "11b63ee7b482365e4b52ca837a5dc6e63adf197b",
   "homepage": "https://github.com/psirenny/monorepo/tree/master/packages/retext-preset",
