@@ -84,7 +84,7 @@
     "retext-sentence-spacing": "2.0.1",
     "retext-simplify": "4.1.1",
     "retext-spell": "2.3.1",
-    "retext-syntax-mentions": "1.1.4",
+    "retext-syntax-mentions": "1.1.5",
     "retext-syntax-urls": "1.0.0",
     "rollup": "0.66.6",
     "rollup-plugin-babel": "4.1.0-0",
