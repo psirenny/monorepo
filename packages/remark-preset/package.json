@@ -105,7 +105,7 @@
     "remark-lint-table-cell-padding": "^1.0.2",
     "remark-preset-lint-markdown-style-guide": "^2.1.2",
     "remark-preset-lint-recommended": "^3.0.2",
-    "remark-retext": "^3.1.1",
+    "remark-retext": "^3.1.2",
     "unified": "^7.0.0"
   },
   "gitHead": "11b63ee7b482365e4b52ca837a5dc6e63adf197b",
