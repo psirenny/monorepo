@@ -14,7 +14,7 @@ import remarkLintTableCellPadding from 'remark-lint-table-cell-padding';
 import remarkPresetLintMarkdownStyleGuide from 'remark-preset-lint-markdown-style-guide';
 import remarkPresetLintRecommended from 'remark-preset-lint-recommended';
 import remarkRetext from 'remark-retext';
-import /* tree-shaking no-side-effects-when-called */ unified from 'unified';
+import unified from 'unified';
 
 export const plugins = [
   [remarkRetext, unified().use(remarkRetextPreset)], // eslint-disable-line tree-shaking/no-side-effects-in-initialization
