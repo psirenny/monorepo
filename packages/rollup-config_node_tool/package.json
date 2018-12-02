@@ -1,6 +1,6 @@
 {
   "name": "@psirenny/rollup-config_node_tool",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "psirenny's rollup config for node tools",
   "author": "Dennis Torres <djtorres0@gmail.com>",
   "bugs": {
