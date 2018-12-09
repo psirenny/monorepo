@@ -106,8 +106,8 @@
     "clean": "trash **.DS_Store *.log node_modules",
     "lint": "run-s lint:js lint:md lint:pkg",
     "lint:js": "eslint . --ext .js,.md",
-    "lint:pkg": "npmPkgJsonLint ./package.json",
     "lint:md": "remark --frail .",
+    "lint:pkg": "npmPkgJsonLint ./package.json",
     "outdated": "updates -gp",
     "update": "updates -gpu"
   },

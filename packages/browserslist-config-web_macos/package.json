@@ -120,7 +120,7 @@
     "lint:js": "eslint . --ext .js,.md",
     "lint:pkg": "npmPkgJsonLint ./package.json",
     "outdated": "updates -gp",
-    "typecheck": "flow .",
+    "typecheck": "flow check .",
     "typecheck:cov": "flow-coverage-report --config .flowcoveragereportrc",
     "update": "updates -gpu"
   },
