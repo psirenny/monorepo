@@ -5,6 +5,7 @@
 .flow-coverage
 .flowconfig
 .flowcoveragereportrc
+.npmpackagejsonlintrc.json
 .remarkrc
 flow-typed
 rollup.config.js
