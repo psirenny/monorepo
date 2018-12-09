@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.6.4](https://github.com/psirenny/monorepo/tree/master/packages/eslint-config/compare/@psirenny/eslint-config@1.6.3...@psirenny/eslint-config@1.6.4) (2018-12-09)
+
+
+### Bug Fixes
+
+* stop unterminated flow server after typecheck report ([73fd020](https://github.com/psirenny/monorepo/tree/master/packages/eslint-config/commit/73fd020))
+
+
+
+
+
 ## [1.6.3](https://github.com/psirenny/monorepo/tree/master/packages/eslint-config/compare/@psirenny/eslint-config@1.6.1...@psirenny/eslint-config@1.6.3) (2018-12-02)
 
 **Note:** Version bump only for package @psirenny/eslint-config

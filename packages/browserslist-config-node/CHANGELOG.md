@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.4.2](https://github.com/psirenny/monorepo/tree/master/packages/browserslist-config-node/compare/@psirenny/browserslist-config-node@1.4.1...@psirenny/browserslist-config-node@1.4.2) (2018-12-09)
+
+
+### Bug Fixes
+
+* stop unterminated flow server after typecheck report ([73fd020](https://github.com/psirenny/monorepo/tree/master/packages/browserslist-config-node/commit/73fd020))
+
+
+
+
+
 ## [1.4.1](https://github.com/psirenny/monorepo/tree/master/packages/browserslist-config-node/compare/@psirenny/browserslist-config-node@1.4.0...@psirenny/browserslist-config-node@1.4.1) (2018-12-02)
 
 **Note:** Version bump only for package @psirenny/browserslist-config-node
