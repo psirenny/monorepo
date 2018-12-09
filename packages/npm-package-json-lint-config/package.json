@@ -124,7 +124,7 @@
     "lint:pkg": "npmPkgJsonLint ./package.json",
     "outdated": "updates -gp",
     "typecheck": "flow check .",
-    "typecheck:cov": "flow-coverage-report --config .flowcoveragereportrc",
+    "typecheck:cov": "flow-coverage-report --config .flowcoveragereportrc && flow stop",
     "update": "updates -gpu"
   },
   "sideEffects": false
