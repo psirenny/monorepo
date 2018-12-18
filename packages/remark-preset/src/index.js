@@ -17,7 +17,7 @@ import remarkRetext from 'remark-retext';
 import unified from 'unified';
 
 export const plugins = [
-  [remarkRetext, unified().use(remarkRetextPreset)], // eslint-disable-line tree-shaking/no-side-effects-in-initialization
+  [remarkRetext, unified().use(remarkRetextPreset)],
   [remarkLintBlockquoteIndentation, 2],
   [remarkLintCheckboxCharacterStyle, { checked: 'x', unchecked: ' ' }],
   [remarkLintCodeBlockStyle, 'fenced'],
