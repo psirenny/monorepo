@@ -1,6 +1,6 @@
 {
   "name": "@psirenny/remark-preset",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "psirenny's remark config",
   "author": "Dennis Torres <djtorres0@gmail.com>",
   "bugs": "https://github.com/psirenny/monorepo/issues",
@@ -29,7 +29,7 @@
     "@babel/plugin-transform-flow-strip-types": "7.2.0",
     "@babel/preset-env": "7.2.0",
     "@babel/preset-flow": "7.0.0",
-    "@psirenny/retext-preset": "1.4.2",
+    "@psirenny/retext-preset": "1.4.3",
     "babel-eslint": "10.0.1",
     "babel-plugin-preval": "3.0.1",
     "dictionary-en-us": "2.0.0",

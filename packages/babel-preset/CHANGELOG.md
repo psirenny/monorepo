@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.5.0](https://github.com/psirenny/monorepo/tree/master/packages/babel-preset/compare/@psirenny/babel-preset@1.4.2...@psirenny/babel-preset@1.5.0) (2018-12-18)
+
+
+### Bug Fixes
+
+* **babel-preset:** remove eslintrc file from npm tarball ([8c2f21c](https://github.com/psirenny/monorepo/tree/master/packages/babel-preset/commit/8c2f21c))
+
+
+### Features
+
+* **babel-preset:** add flow typedefs ([6cf9dff](https://github.com/psirenny/monorepo/tree/master/packages/babel-preset/commit/6cf9dff))
+
+
+
+
+
 ## [1.4.2](https://github.com/psirenny/monorepo/tree/master/packages/babel-preset/compare/@psirenny/babel-preset@1.4.1...@psirenny/babel-preset@1.4.2) (2018-12-09)
 
 **Note:** Version bump only for package @psirenny/babel-preset
