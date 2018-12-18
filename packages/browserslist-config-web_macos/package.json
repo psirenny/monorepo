@@ -3,9 +3,7 @@
   "version": "1.4.2",
   "description": "psirenny's web macOS browserslist config",
   "author": "Dennis Torres <djtorres0@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/psirenny/monorepo/issues"
-  },
+  "bugs": "https://github.com/psirenny/monorepo/issues",
   "devDependencies": {
     "@babel/core": "7.2.0",
     "@babel/plugin-external-helpers": "7.2.0",

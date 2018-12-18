@@ -3,9 +3,7 @@
   "version": "1.4.2",
   "description": "psirenny's babel preset",
   "author": "Dennis Torres <djtorres0@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/psirenny/monorepo/issues"
-  },
+  "bugs": "https://github.com/psirenny/monorepo/issues",
   "devDependencies": {
     "dictionary-en-us": "2.0.0",
     "eslint": "5.10.0",

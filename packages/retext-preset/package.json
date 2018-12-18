@@ -3,9 +3,7 @@
   "version": "1.4.2",
   "description": "psirenny's remark config",
   "author": "Dennis Torres <djtorres0@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/psirenny/monorepo/issues"
-  },
+  "bugs": "https://github.com/psirenny/monorepo/issues",
   "dependencies": {
     "@psirenny/dictionary": "1.4.2"
   },
