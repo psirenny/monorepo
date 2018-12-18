@@ -1,6 +1,6 @@
-/* eslint-disable tree-shaking/no-side-effects-in-initialization */
+// @flow strict
 
-module.exports = (_, opts) => ({
+module.exports = (_ /* : any */, opts /* : { [string]: any } */) => ({
   plugins: [
     ['@babel/plugin-transform-flow-strip-types'],
     ['@babel/plugin-proposal-class-properties', { loose: false }],
