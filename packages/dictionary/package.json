@@ -85,7 +85,7 @@
     "rollup-plugin-flow-entry": "0.2.0",
     "trash-cli": "1.4.0",
     "unified": "7.1.0",
-    "updates": "5.4.3"
+    "updates": "6.0.0"
   },
   "gitHead": "11b63ee7b482365e4b52ca837a5dc6e63adf197b",
   "homepage": "https://github.com/psirenny/monorepo/tree/master/packages/dictionary",
