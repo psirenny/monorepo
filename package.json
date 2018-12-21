@@ -50,7 +50,7 @@
     "retext-syntax-urls": "1.0.1",
     "trash-cli": "1.4.0",
     "unified": "7.1.0",
-    "updates": "5.4.3"
+    "updates": "6.0.0"
   },
   "homepage": "https://github.com/psirenny/monorepo",
   "keywords": ["monorepo", "psirenny"],
