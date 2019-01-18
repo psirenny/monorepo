@@ -1,4 +1,4 @@
-// @flow
+// @flow strict
 
 export default {
   latest: ['last 1 safari major version'],

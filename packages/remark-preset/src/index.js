@@ -1,4 +1,4 @@
-// @flow
+// @flow strict
 
 import * as remarkRetextPreset from '@psirenny/retext-preset';
 import remarkLintBlockquoteIndentation from 'remark-lint-blockquote-indentation';
