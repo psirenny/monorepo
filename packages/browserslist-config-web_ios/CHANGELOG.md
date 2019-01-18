@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.4.4](https://github.com/psirenny/monorepo/tree/master/packages/browserslist-config-web_ios/compare/@psirenny/browserslist-config-web_ios@1.4.3...@psirenny/browserslist-config-web_ios@1.4.4) (2019-01-18)
+
+**Note:** Version bump only for package @psirenny/browserslist-config-web_ios
+
+
+
+
+
 ## [1.4.3](https://github.com/psirenny/monorepo/tree/master/packages/browserslist-config-web_ios/compare/@psirenny/browserslist-config-web_ios@1.4.2...@psirenny/browserslist-config-web_ios@1.4.3) (2018-12-18)
 
 **Note:** Version bump only for package @psirenny/browserslist-config-web_ios

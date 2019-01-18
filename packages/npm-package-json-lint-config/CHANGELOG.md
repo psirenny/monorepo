@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.4](https://github.com/psirenny/monorepo/tree/master/packages/npm-package-json-lint-config/compare/@psirenny/npm-package-json-lint-config@1.2.3...@psirenny/npm-package-json-lint-config@1.2.4) (2019-01-18)
+
+**Note:** Version bump only for package @psirenny/npm-package-json-lint-config
+
+
+
+
+
 ## [1.2.3](https://github.com/psirenny/monorepo/tree/master/packages/npm-package-json-lint-config/compare/@psirenny/npm-package-json-lint-config@1.2.2...@psirenny/npm-package-json-lint-config@1.2.3) (2018-12-18)
 
 **Note:** Version bump only for package @psirenny/npm-package-json-lint-config
