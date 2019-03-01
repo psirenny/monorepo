@@ -53,8 +53,7 @@
     "retext-syntax-mentions": "1.1.5",
     "retext-syntax-urls": "1.0.1",
     "trash-cli": "1.4.0",
-    "unified": "7.1.0",
-    "updates": "6.0.3"
+    "unified": "7.1.0"
   },
   "peerDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.2.3",
@@ -105,8 +104,8 @@
     "lint:js": "eslint . --ext .js,.md",
     "lint:md": "remark --frail .",
     "lint:pkg": "npmPkgJsonLint ./package.json",
-    "outdated": "updates -gp",
-    "update": "updates -gpu"
+    "outdated": "yarn outdated",
+    "update": "yarn upgrade-interactive --latest"
   },
   "sideEffects": false
 }

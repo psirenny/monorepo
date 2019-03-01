@@ -84,8 +84,7 @@
     "rollup-plugin-babel": "5.0.0-alpha.0",
     "rollup-plugin-flow-entry": "0.2.0",
     "trash-cli": "1.4.0",
-    "unified": "7.0.0",
-    "updates": "6.0.3"
+    "unified": "7.0.0"
   },
   "peerDependencies": {
     "@psirenny/retext-preset": "^1.4.3",
@@ -134,10 +133,10 @@
     "lint:js": "eslint . --ext .js,.md",
     "lint:md": "remark --frail .",
     "lint:pkg": "npmPkgJsonLint ./package.json",
-    "outdated": "updates -gp",
+    "outdated": "yarn outdated",
     "typecheck": "flow check .",
     "typecheck:cov": "flow-coverage-report --config .flowcoveragereportrc && flow stop",
-    "update": "updates -gpu"
+    "update": "yarn upgrade-interactive --latest"
   },
   "sideEffects": false
 }

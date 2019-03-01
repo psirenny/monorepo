@@ -84,8 +84,7 @@
     "rollup-plugin-babel": "5.0.0-alpha.0",
     "rollup-plugin-flow-entry": "0.2.0",
     "trash-cli": "1.4.0",
-    "unified": "7.1.0",
-    "updates": "6.0.3"
+    "unified": "7.1.0"
   },
   "peerDependencies": {
     "browserslist": "^4.4.1"
@@ -116,10 +115,10 @@
     "lint": "run-s lint:js lint:pkg",
     "lint:js": "eslint . --ext .js,.md",
     "lint:pkg": "npmPkgJsonLint ./package.json",
-    "outdated": "updates -gp",
+    "outdated": "yarn outdated",
     "typecheck": "flow check .",
     "typecheck:cov": "flow-coverage-report --config .flowcoveragereportrc && flow stop",
-    "update": "updates -gpu"
+    "update": "yarn upgrade-interactive --latest"
   },
   "sideEffects": false
 }

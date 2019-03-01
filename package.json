@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "@psirenny's monorepo",
   "author": "Dennis Torres <djtorres0@gmail.com>",
-  "bugs": "https://github.com/psirenny/psirenny/issues",
+  "bugs": "https://github.com/psirenny/monorepo/issues",
   "devDependencies": {
     "@commitlint/cli": "7.3.2",
     "@commitlint/config-conventional": "7.3.1",
@@ -49,8 +49,7 @@
     "retext-syntax-mentions": "1.1.5",
     "retext-syntax-urls": "1.0.1",
     "trash-cli": "1.4.0",
-    "unified": "7.1.0",
-    "updates": "6.0.3"
+    "unified": "7.1.0"
   },
   "homepage": "https://github.com/psirenny/monorepo",
   "keywords": ["monorepo", "psirenny"],
@@ -58,9 +57,7 @@
   "private": true,
   "repository": "https://github.com/psirenny/monorepo",
   "scripts": {
-    "audit": "run-s audit:self audit:pkgs",
-    "audit:pkgs": "lerna run audit",
-    "audit:self": "yarn audit",
+    "audit": "yarn audit",
     "build": "run-s build:pkgs",
     "build:pkgs": "lerna run build",
     "check": "run-s check:self check:pkgs",
@@ -78,14 +75,10 @@
     "lint:self": "run-s lint:md:self lint:pkg:self",
     "lint:md:self": "remark --frail .",
     "lint:pkg:self": "npmPkgJsonLint ./package.json",
-    "outdated": "run-s outdated:pkgs outdated:self",
-    "outdated:pkgs": "lerna run outdated",
-    "outdated:self": "updates -gp",
+    "outdated": "yarn outdated",
     "publish": "lerna publish",
     "release": "lerna version",
-    "update": "run-s update:self update:pkgs",
-    "update:pkgs": "lerna run update",
-    "update:self": "updates -gpu"
+    "update": "yarn upgrade-interactive --latest"
   },
   "workspaces": ["packages/*"]
 }
