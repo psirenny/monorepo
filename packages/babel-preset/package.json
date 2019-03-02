@@ -17,6 +17,7 @@
     "eslint-plugin-import": "2.16.0",
     "eslint-plugin-jsx-a11y": "6.2.1",
     "eslint-plugin-markdown": "1.0.0",
+    "flow-bin": "0.94.0",
     "npm-package-json-lint": "3.6.0",
     "npm-run-all": "4.1.5",
     "remark-cli": "6.0.1",
@@ -52,6 +53,9 @@
     "retext-spell": "2.4.0",
     "retext-syntax-mentions": "1.1.5",
     "retext-syntax-urls": "1.0.1",
+    "rollup": "1.4.0",
+    "rollup-plugin-flow": "1.1.1",
+    "rollup-plugin-flow-entry": "0.3.1",
     "trash-cli": "1.4.0",
     "unified": "7.1.0"
   },
@@ -88,7 +92,7 @@
     "psirenny"
   ],
   "license": "Unlicense",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "publishConfig": {
     "access": "public"
   },
@@ -98,14 +102,16 @@
   },
   "scripts": {
     "audit": "yarn audit",
-    "check": "run-s audit lint",
+    "build": "rollup -c",
+    "check": "run-s audit lint typecheck",
     "clean": "trash **.DS_Store *.log node_modules",
     "lint": "run-s lint:js lint:md lint:pkg",
     "lint:js": "eslint . --ext .js,.md",
     "lint:md": "remark --frail .",
     "lint:pkg": "npmPkgJsonLint ./package.json",
     "outdated": "yarn outdated",
-    "update": "yarn upgrade-interactive --latest"
+    "update": "yarn upgrade-interactive --latest",
+    "typecheck": "flow check ."
   },
   "sideEffects": false
 }

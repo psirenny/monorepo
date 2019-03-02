@@ -2,8 +2,6 @@
 .babelrc
 .eslintignore
 .eslintrc
-.flow-coverage
 .flowconfig
-.flowcoveragereportrc
 .npmpackagejsonlintrc.json
 .remarkrc

@@ -1,6 +1,0 @@
-{
-  "globIncludePatterns": ["src/**/*.js"],
-  "outputDir": ".flow-coverage",
-  "threshold": 100,
-  "reportTypes": ["html"]
-}

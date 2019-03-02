@@ -1,6 +1,8 @@
-// @flow strict
+'use strict';
 
-export default (_: mixed, opts: { [string]: mixed }) => ({
+//       strict
+
+var index = (_       , opts                     ) => ({
   plugins: [
     ['@babel/plugin-transform-flow-strip-types'],
     ['@babel/plugin-proposal-class-properties', { loose: false }],
@@ -28,3 +30,5 @@ export default (_: mixed, opts: { [string]: mixed }) => ({
     ['@babel/preset-env', { loose: true, shippedProposals: true, ...opts }],
   ],
 });
+
+module.exports = index;

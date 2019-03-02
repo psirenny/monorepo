@@ -1,5 +1,7 @@
 *.log
 .eslintignore
 .eslintrc
+.flowconfig
 .npmpackagejsonlintrc.json
 .remarkrc
+rollup.config.js

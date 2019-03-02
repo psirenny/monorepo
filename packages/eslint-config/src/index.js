@@ -23,6 +23,14 @@ export default {
   rules: {
     'arrow-parens': [0],
     'eslint-comments/disable-enable-pair': [2, { allowWholeFile: true }],
+    'flowtype/newline-after-flow-annotation': [2, 'always'],
+    'flowtype/no-existential-type': [2],
+    'flowtype/no-weak-types': [2],
+    'flowtype/require-parameter-type': [2],
+    'flowtype/require-types-at-top': [2],
+    'flowtype/require-valid-file-annotation': [2, 'always', { annotationStyle: 'line' }],
+    'flowtype/sort-keys': [2, 'asc', { natural: true }],
+    'flowtype/type-id-match': [2, '^([A-Z][a-z0-9]*)+$'],
     'function-paren-newline': [0, 'consistent'],
     'max-len': [2, 160, 2, {
       ignoreComments: false,
