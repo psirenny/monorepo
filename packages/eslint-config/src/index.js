@@ -26,7 +26,6 @@ export default {
     'flowtype/newline-after-flow-annotation': [2, 'always'],
     'flowtype/no-existential-type': [2],
     'flowtype/no-weak-types': [2],
-    'flowtype/require-parameter-type': [2],
     'flowtype/require-types-at-top': [2],
     'flowtype/require-valid-file-annotation': [2, 'always', { annotationStyle: 'line' }],
     'flowtype/sort-keys': [2, 'asc', { natural: true }],
