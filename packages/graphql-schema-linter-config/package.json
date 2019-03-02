@@ -86,17 +86,16 @@
     "unified": "7.1.0"
   },
   "peerDependencies": {
-    "npm-package-json-lint": "^3.4.1"
+    "graphql-schema-linter-config": "^0.2.0"
   },
   "gitHead": "11b63ee7b482365e4b52ca837a5dc6e63adf197b",
   "homepage": "https://github.com/psirenny/monorepo/tree/master/packages/graphql-schema-linter-config",
   "keywords": [
     "config",
-    "json",
+    "graphql",
     "lint",
-    "npm",
-    "package",
-    "psirenny"
+    "psirenny",
+    "schema"
   ],
   "license": "Unlicense",
   "main": "dist/cjs/index.js",
