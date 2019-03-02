@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.7.0](https://github.com/psirenny/monorepo/tree/master/packages/eslint-config/compare/@psirenny/eslint-config@1.6.6...@psirenny/eslint-config@1.7.0) (2019-03-02)
+
+
+### Features
+
+* **graphql-schema-linter-config:** add graphql schema lint config ([658da56](https://github.com/psirenny/monorepo/tree/master/packages/eslint-config/commit/658da56))
+
+
+
+
+
 ## [1.6.6](https://github.com/psirenny/monorepo/tree/master/packages/eslint-config/compare/@psirenny/eslint-config@1.6.5...@psirenny/eslint-config@1.6.6) (2019-01-18)
 
 **Note:** Version bump only for package @psirenny/eslint-config
