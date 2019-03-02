@@ -1,4 +1,4 @@
-// @flow strict
+// @flow
 
 import rollupPluginBabel from 'rollup-plugin-babel';
 import rollupPluginFlowEntry from 'rollup-plugin-flow-entry';
@@ -32,7 +32,7 @@ export default {
     { file: 'dist/es/index.js', format: 'es' },
   ],
   plugins: [
-    rollupPluginFlowEntry(),
+    rollupPluginFlowEntry({ mode: 'strict' }),
     rollupPluginBabel({ babelHelpers: 'inline' }),
   ],
 };

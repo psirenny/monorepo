@@ -2,7 +2,6 @@
 
 /* eslint-disable import/prefer-default-export */
 
-// $FlowFixMe
 import dictionary from '@psirenny/dictionary';
 import dictionaryEnUs from 'dictionary-en-us';
 import retextAssuming from 'retext-assuming';
