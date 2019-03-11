@@ -5,7 +5,10 @@ import rollupPluginFlowEntry from 'rollup-plugin-flow-entry';
 
 export default {
   input: 'src/index.js',
-  output: { file: 'dist/index.js', format: 'cjs' },
+  output: [
+    { file: 'dist/cjs/index.js', format: 'cjs' },
+    { file: 'dist/index.js', format: 'esm' },
+  ],
   plugins: [
     rollupPluginFlowEntry({ mode: 'strict' }),
     rollupPluginFlow(),

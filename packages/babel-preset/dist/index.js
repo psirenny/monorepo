@@ -1,5 +1,3 @@
-'use strict';
-
 //       strict
 
 var index = (_       , opts                     ) => ({
@@ -31,4 +29,4 @@ var index = (_       , opts                     ) => ({
   ],
 });
 
-module.exports = index;
+export default index;

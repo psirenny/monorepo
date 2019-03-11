@@ -1,6 +1,3 @@
 {
-  "extends": "@psirenny/npm-package-json-lint-config",
-  "rules": {
-    "require-module": "off"
-  }
+  "extends": "@psirenny/npm-package-json-lint-config"
 }

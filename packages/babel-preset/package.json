@@ -6,7 +6,7 @@
   "bugs": "https://github.com/psirenny/monorepo/issues",
   "devDependencies": {
     "dictionary-en-us": "2.0.0",
-    "eslint": "5.15.0",
+    "eslint": "5.15.1",
     "eslint-config-airbnb-base": "13.1.0",
     "eslint-plugin-array-func": "3.1.3",
     "eslint-plugin-ava": "5.1.1",
@@ -53,7 +53,7 @@
     "retext-spell": "2.4.0",
     "retext-syntax-mentions": "1.1.5",
     "retext-syntax-urls": "1.0.1",
-    "rollup": "1.4.0",
+    "rollup": "1.6.0",
     "rollup-plugin-flow": "1.1.1",
     "rollup-plugin-flow-entry": "0.3.1",
     "trash-cli": "1.4.0",
@@ -92,7 +92,8 @@
     "psirenny"
   ],
   "license": "Unlicense",
-  "main": "dist/index.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
   "publishConfig": {
     "access": "public"
   },
@@ -104,7 +105,7 @@
     "audit": "yarn audit",
     "build": "rollup -c",
     "check": "run-s audit lint typecheck",
-    "clean": "trash **.DS_Store *.log node_modules",
+    "clean": "trash **.DS_Store *.log dist node_modules",
     "lint": "run-s lint:js lint:md lint:pkg",
     "lint:js": "eslint . --ext .js,.md",
     "lint:md": "remark --frail .",
