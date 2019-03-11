@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.5.1](https://github.com/psirenny/monorepo/tree/master/packages/browserslist-config-web_macos/compare/@psirenny/browserslist-config-web_macos@1.5.0...@psirenny/browserslist-config-web_macos@1.5.1) (2019-03-11)
+
+**Note:** Version bump only for package @psirenny/browserslist-config-web_macos
+
+
+
+
+
 # [1.5.0](https://github.com/psirenny/monorepo/tree/master/packages/browserslist-config-web_macos/compare/@psirenny/browserslist-config-web_macos@1.4.4...@psirenny/browserslist-config-web_macos@1.5.0) (2019-03-02)
 
 
