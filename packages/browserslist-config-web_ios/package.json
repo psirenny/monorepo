@@ -102,10 +102,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/psirenny/monorepo/tree/master/packages/browserslist-config-web_ios"
-  },
+  "repository": "github:psirenny/monorepo/tree/master/packages/browserslist-config-web_ios",
   "scripts": {
     "audit": "yarn audit",
     "build": "rollup -c",

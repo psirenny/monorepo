@@ -88,12 +88,8 @@
   "gitHead": "11b63ee7b482365e4b52ca837a5dc6e63adf197b",
   "homepage": "https://github.com/psirenny/monorepo/tree/master/packages/dictionary",
   "keywords": [
-    "config",
-    "eslint",
-    "guide",
-    "js",
-    "psirenny",
-    "style"
+    "dictionary",
+    "psirenny"
   ],
   "license": "Unlicense",
   "main": "dist/cjs/index.js",
@@ -101,10 +97,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/psirenny/monorepo/tree/master/packages/dictionary"
-  },
+  "repository": "github:psirenny/monorepo/tree/master/packages/dictionary",
   "scripts": {
     "audit": "yarn audit",
     "build": "rollup -c",

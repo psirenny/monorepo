@@ -102,10 +102,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/psirenny/monorepo/tree/master/packages/browserslist-config-web_macos"
-  },
+  "repository": "github:psirenny/monorepo/tree/master/packages/browserslist-config-web_macos",
   "scripts": {
     "audit": "yarn audit",
     "build": "rollup -c",

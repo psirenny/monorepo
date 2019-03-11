@@ -127,10 +127,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/psirenny/monorepo/tree/master/packages/retext-preset"
-  },
+  "repository": "github:psirenny/monorepo/tree/master/packages/retext-preset",
   "scripts": {
     "audit": "yarn audit",
     "build": "rollup -c",

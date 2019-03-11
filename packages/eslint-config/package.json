@@ -114,10 +114,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/psirenny/monorepo/tree/master/packages/eslint-config"
-  },
+  "repository": "github:psirenny/monorepo/tree/master/packages/eslint-config",
   "scripts": {
     "audit": "yarn audit",
     "build": "rollup -c",
