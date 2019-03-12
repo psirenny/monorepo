@@ -61,8 +61,7 @@
   "repository": "https://github.com/psirenny/monorepo",
   "scripts": {
     "audit": "yarn audit",
-    "build": "run-s build:pkgs",
-    "build:pkgs": "lerna run build",
+    "build": "lerna run build",
     "check": "run-s check:root check:pkgs",
     "check:pkgs": "lerna run check",
     "check:root": "run-s audit lint",
@@ -79,6 +78,7 @@
     "lint:md": "remark --frail .",
     "lint:pkg": "npmPkgJsonLint ./package.json",
     "outdated": "yarn outdated",
+    "prepublish": "run-s build",
     "publish": "lerna publish",
     "release": "lerna version",
     "update": "yarn upgrade-interactive --latest"
