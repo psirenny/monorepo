@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.10.0](https://github.com/psirenny/monorepo/tree/master/packages/eslint-config-react/compare/@psirenny/eslint-config-react@1.9.0...@psirenny/eslint-config-react@1.10.0) (2019-03-13)
+
+
+### Features
+
+* **eslint-config-react:** disable jsx filename extension ([c0ac749](https://github.com/psirenny/monorepo/tree/master/packages/eslint-config-react/commit/c0ac749))
+
+
+
+
+
 # [1.9.0](https://github.com/psirenny/monorepo/tree/master/packages/eslint-config-react/compare/@psirenny/eslint-config-react@1.8.0...@psirenny/eslint-config-react@1.9.0) (2019-03-12)
 
 
