@@ -1,4 +1,4 @@
-// @flow
+// @flow strict
 
 import rollupPluginBabel from 'rollup-plugin-babel';
 import rollupPluginFlowEntry from 'rollup-plugin-flow-entry';

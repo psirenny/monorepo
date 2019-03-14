@@ -64,13 +64,16 @@
     "build": "lerna run build",
     "check": "run-s check:root check:pkgs",
     "check:pkgs": "lerna run check",
-    "check:root": "run-s audit lint",
+    "check:root": "run-s audit deps:check lint",
     "ci:check": "circleci local execute --job build_and_check",
     "ci:postcheck": "greenkeeper-lockfile-upload",
     "ci:precheck": "greenkeeper-lockfile-update",
     "clean": "run-s clean:pkgs clean:root",
     "clean:pkgs": "lerna run clean",
     "clean:root": "trash **.DS_Store *.log node_modules",
+    "deps:check": "run-s deps:check:verify deps:check:integrity",
+    "deps:check:integrity": "yarn check --integrity",
+    "deps:check:verify": "yarn check --verify-tree",
     "flow-fix": "flow-mono create-symlinks ./build/.flowconfig",
     "install:pkgs": "run-s lerna:bootstrap flow-fix",
     "lerna:bootstrap": "lerna bootstrap",
@@ -80,9 +83,13 @@
     "outdated": "yarn outdated",
     "postinstall": "run-s install:pkgs",
     "prepublish": "run-s build",
+    "prepublishOnly": "run-s check",
     "publish": "lerna publish",
     "release": "lerna version",
-    "update": "yarn upgrade-interactive --latest"
+    "update": "run-s update:js update:flow update:yarn",
+    "update:flow": "lerna run update:flow",
+    "update:js": "yarn upgrade-interactive --latest",
+    "update:yarn": "yarn policies set-version"
   },
   "workspaces": [
     "packages/*"

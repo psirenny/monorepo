@@ -29,6 +29,7 @@ export default {
     'declaration-no-important': [true],
     'font-family-name-quotes': ['always-where-required'],
     'font-family-no-duplicate-names': [true],
+    'font-family-no-missing-generic-family-keyword': null,
     'font-weight-notation': ['numeric', { ignore: 'relative' }],
     'function-calc-no-invalid': [true],
     'function-calc-no-unspaced-operator': [true],

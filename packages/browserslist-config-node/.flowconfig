@@ -1,3 +1,6 @@
+[declarations]
+\/.*flow-typed\/.*
+
 [ignore]
 dist
 

@@ -44,6 +44,7 @@
     "eslint-plugin-jsx-a11y": "6.2.1",
     "eslint-plugin-markdown": "1.0.0",
     "flow-bin": "0.94.0",
+    "flow-typed": "2.5.1",
     "npm-run-all": "4.1.5",
     "remark-cli": "6.0.1",
     "remark-lint-blockquote-indentation": "1.0.2",
@@ -81,6 +82,8 @@
     "rollup": "1.6.0",
     "rollup-plugin-babel": "5.0.0-alpha.0",
     "rollup-plugin-flow-entry": "0.3.1",
+    "stylelint": "9.10.1",
+    "stylelint-config-recommended": "2.1.0",
     "trash-cli": "1.4.0",
     "unified": "7.1.0"
   },
@@ -109,13 +112,17 @@
     "build": "rollup -c",
     "check": "run-s audit lint typecheck",
     "clean": "trash **.DS_Store *.log dist node_modules",
+    "flow-typed:update": "flow-typed update",
     "lint": "run-s lint:js lint:md lint:pkg",
     "lint:js": "eslint . --ext .js,.md",
     "lint:md": "remark --frail .",
     "lint:pkg": "npmPkgJsonLint ./package.json",
     "outdated": "yarn outdated",
     "typecheck": "flow check .",
-    "update": "yarn upgrade-interactive --latest"
+    "update": "run-s update:js update:flow",
+    "update:flow": "run-s flow-typed:update",
+    "update:js": "yarn upgrade-interactive --latest",
+    "watch": "rollup -c -w"
   },
   "sideEffects": false
 }
