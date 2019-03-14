@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.5.2](https://github.com/psirenny/monorepo/tree/master/packages/retext-preset/compare/@psirenny/retext-preset@1.5.1...@psirenny/retext-preset@1.5.2) (2019-03-14)
+
+**Note:** Version bump only for package @psirenny/retext-preset
+
+
+
+
+
 ## [1.5.1](https://github.com/psirenny/monorepo/tree/master/packages/retext-preset/compare/@psirenny/retext-preset@1.5.0...@psirenny/retext-preset@1.5.1) (2019-03-11)
 
 **Note:** Version bump only for package @psirenny/retext-preset
