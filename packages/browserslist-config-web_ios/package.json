@@ -87,7 +87,7 @@
     "unified": "7.1.0"
   },
   "peerDependencies": {
-    "browserslist": "^4.4.1"
+    "browserslist": "^4.5.2"
   },
   "gitHead": "11b63ee7b482365e4b52ca837a5dc6e63adf197b",
   "homepage": "https://github.com/psirenny/monorepo/tree/master/packages/browserslist-config-web_ios",
