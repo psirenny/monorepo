@@ -83,6 +83,7 @@
     "lint:pkg": "npmPkgJsonLint ./package.json",
     "outdated": "yarn outdated",
     "postinstall": "run-s install:pkgs",
+    "postupdate": "lerna run postupdate",
     "prepublish": "run-s build",
     "prepublishOnly": "run-s check",
     "publish": "lerna publish",

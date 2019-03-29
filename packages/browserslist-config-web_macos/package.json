@@ -114,7 +114,7 @@
     "lint:js": "eslint . --ext .js,.md",
     "lint:pkg": "npmPkgJsonLint ./package.json",
     "outdated": "yarn outdated",
-    "postinstall": "run-s flow:install",
+    "postupdate": "run-s flow:install",
     "typecheck": "flow check .",
     "update": "yarn upgrade-interactive --latest",
     "watch": "rollup -c -w"
