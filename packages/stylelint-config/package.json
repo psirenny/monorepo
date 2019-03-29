@@ -84,12 +84,14 @@
     "rollup-plugin-flow-entry": "0.3.1",
     "stylelint": "9.10.1",
     "stylelint-config-recommended": "2.1.0",
+    "stylelint-order": "2.1.0",
     "trash-cli": "1.4.0",
     "unified": "7.1.0"
   },
   "peerDependencies": {
     "stylelint": "^9.10.1",
-    "stylelint-config-recommended": "^2.1.0"
+    "stylelint-config-recommended": "^2.1.0",
+    "stylelint-order": "^2.1.0"
   },
   "gitHead": "11b63ee7b482365e4b52ca837a5dc6e63adf197b",
   "homepage": "https://github.com/psirenny/monorepo/tree/master/packages/stylelint-config",

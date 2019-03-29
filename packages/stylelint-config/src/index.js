@@ -1,9 +1,8 @@
 // @flow strict
 
 export default {
-  extends: [
-    'stylelint-config-recommended',
-  ],
+  extends: ['stylelint-config-recommended'],
+  plugins: ['stylelint-order'],
   rules: {
     'at-rule-name-case': ['lower'],
     'at-rule-name-space-after': ['always'],
@@ -55,6 +54,8 @@ export default {
     'no-missing-end-of-source-newline': [true],
     'number-leading-zero': ['always'],
     'number-no-trailing-zeros': [true],
+    'order/order': ['custom-properties', 'declarations'],
+    'order/properties-alphabetical-order': true,
     'property-case': ['lower'],
     'property-no-unknown': [true],
     'property-no-vendor-prefix': [true],
