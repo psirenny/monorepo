@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.7.5](https://github.com/psirenny/monorepo/tree/master/packages/eslint-config/compare/@psirenny/eslint-config@1.7.4...@psirenny/eslint-config@1.7.5) (2019-03-29)
+
+
+### Bug Fixes
+
+* remove erroneous postinstall scripts ([23f044c](https://github.com/psirenny/monorepo/tree/master/packages/eslint-config/commit/23f044c))
+
+
+
+
+
 ## [1.7.4](https://github.com/psirenny/monorepo/tree/master/packages/eslint-config/compare/@psirenny/eslint-config@1.7.3...@psirenny/eslint-config@1.7.4) (2019-03-29)
 
 **Note:** Version bump only for package @psirenny/eslint-config

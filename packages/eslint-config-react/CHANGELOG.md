@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.10.3](https://github.com/psirenny/monorepo/tree/master/packages/eslint-config-react/compare/@psirenny/eslint-config-react@1.10.2...@psirenny/eslint-config-react@1.10.3) (2019-03-29)
+
+
+### Bug Fixes
+
+* remove erroneous postinstall scripts ([23f044c](https://github.com/psirenny/monorepo/tree/master/packages/eslint-config-react/commit/23f044c))
+
+
+
+
+
 ## [1.10.2](https://github.com/psirenny/monorepo/tree/master/packages/eslint-config-react/compare/@psirenny/eslint-config-react@1.10.1...@psirenny/eslint-config-react@1.10.2) (2019-03-29)
 
 **Note:** Version bump only for package @psirenny/eslint-config-react

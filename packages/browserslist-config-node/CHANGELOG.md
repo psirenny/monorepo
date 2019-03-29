@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.5.4](https://github.com/psirenny/monorepo/tree/master/packages/browserslist-config-node/compare/@psirenny/browserslist-config-node@1.5.3...@psirenny/browserslist-config-node@1.5.4) (2019-03-29)
+
+
+### Bug Fixes
+
+* remove erroneous postinstall scripts ([23f044c](https://github.com/psirenny/monorepo/tree/master/packages/browserslist-config-node/commit/23f044c))
+
+
+
+
+
 ## [1.5.3](https://github.com/psirenny/monorepo/tree/master/packages/browserslist-config-node/compare/@psirenny/browserslist-config-node@1.5.2...@psirenny/browserslist-config-node@1.5.3) (2019-03-29)
 
 **Note:** Version bump only for package @psirenny/browserslist-config-node
