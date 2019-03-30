@@ -87,7 +87,6 @@
     "prepublish": "run-s build",
     "prepublishOnly": "run-s check",
     "publish": "lerna publish",
-    "release": "lerna version",
     "update": "run-s update:js update:yarn",
     "update:js": "yarn upgrade-interactive --latest",
     "update:yarn": "yarn policies set-version"
