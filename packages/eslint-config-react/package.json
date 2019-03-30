@@ -1,6 +1,6 @@
 {
   "name": "@psirenny/eslint-config-react",
-  "version": "1.10.4",
+  "version": "1.10.5",
   "description": "psirenny's eslint react config",
   "author": "Dennis Torres <djtorres0@gmail.com>",
   "bugs": "https://github.com/psirenny/monorepo/issues",
