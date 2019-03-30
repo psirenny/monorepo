@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.6.5](https://github.com/psirenny/monorepo/tree/master/packages/babel-preset/compare/@psirenny/babel-preset@1.6.4...@psirenny/babel-preset@1.6.5) (2019-03-30)
+
+
+### Bug Fixes
+
+* fix order of post scripts ([0f73260](https://github.com/psirenny/monorepo/tree/master/packages/babel-preset/commit/0f73260))
+
+
+
+
+
 ## [1.6.4](https://github.com/psirenny/monorepo/tree/master/packages/babel-preset/compare/@psirenny/babel-preset@1.6.3...@psirenny/babel-preset@1.6.4) (2019-03-29)
 
 

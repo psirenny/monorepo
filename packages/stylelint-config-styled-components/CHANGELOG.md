@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.4](https://github.com/psirenny/monorepo/tree/master/packages/stylelint-config-styled-components/compare/@psirenny/stylelint-config-styled-components@1.1.3...@psirenny/stylelint-config-styled-components@1.1.4) (2019-03-30)
+
+
+### Bug Fixes
+
+* fix order of post scripts ([0f73260](https://github.com/psirenny/monorepo/tree/master/packages/stylelint-config-styled-components/commit/0f73260))
+
+
+
+
+
 ## [1.1.3](https://github.com/psirenny/monorepo/tree/master/packages/stylelint-config-styled-components/compare/@psirenny/stylelint-config-styled-components@1.1.2...@psirenny/stylelint-config-styled-components@1.1.3) (2019-03-29)
 
 

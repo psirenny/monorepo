@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.2](https://github.com/psirenny/monorepo/tree/master/packages/stylelint-config/compare/@psirenny/stylelint-config@1.2.1...@psirenny/stylelint-config@1.2.2) (2019-03-30)
+
+
+### Bug Fixes
+
+* fix order of post scripts ([0f73260](https://github.com/psirenny/monorepo/tree/master/packages/stylelint-config/commit/0f73260))
+
+
+
+
+
 ## [1.2.1](https://github.com/psirenny/monorepo/tree/master/packages/stylelint-config/compare/@psirenny/stylelint-config@1.2.0...@psirenny/stylelint-config@1.2.1) (2019-03-29)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.5.5](https://github.com/psirenny/monorepo/tree/master/packages/dictionary/compare/@psirenny/dictionary@1.5.4...@psirenny/dictionary@1.5.5) (2019-03-30)
+
+
+### Bug Fixes
+
+* fix order of post scripts ([0f73260](https://github.com/psirenny/monorepo/tree/master/packages/dictionary/commit/0f73260))
+
+
+
+
+
 ## [1.5.4](https://github.com/psirenny/monorepo/tree/master/packages/dictionary/compare/@psirenny/dictionary@1.5.3...@psirenny/dictionary@1.5.4) (2019-03-29)
 
 

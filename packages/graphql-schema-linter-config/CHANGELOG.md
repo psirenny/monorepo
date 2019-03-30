@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.6](https://github.com/psirenny/monorepo/tree/master/packages/graphql-schema-linter-config/compare/@psirenny/graphql-schema-linter-config@1.1.5...@psirenny/graphql-schema-linter-config@1.1.6) (2019-03-30)
+
+
+### Bug Fixes
+
+* fix order of post scripts ([0f73260](https://github.com/psirenny/monorepo/tree/master/packages/graphql-schema-linter-config/commit/0f73260))
+
+
+
+
+
 ## [1.1.5](https://github.com/psirenny/monorepo/tree/master/packages/graphql-schema-linter-config/compare/@psirenny/graphql-schema-linter-config@1.1.4...@psirenny/graphql-schema-linter-config@1.1.5) (2019-03-29)
 
 
