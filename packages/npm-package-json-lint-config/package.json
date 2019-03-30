@@ -89,7 +89,7 @@
   "peerDependencies": {
     "npm-package-json-lint": "^3.4.1"
   },
-  "gitHead": "1aa588a69314bcdb4fe2de2d4af76de651fb70b6",
+  "gitHead": "b4b4e8eb6366df007904285de9e9982f68a72f07",
   "homepage": "https://github.com/psirenny/monorepo/tree/master/packages/npm-package-json-lint-config",
   "keywords": [
     "config",
