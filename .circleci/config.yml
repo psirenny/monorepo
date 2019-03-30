@@ -5,8 +5,7 @@ jobs:
       - image: circleci/node:10.14.1
     steps:
       - checkout
-      - run: yarn
-      - run: yarn run install:pkgs
+      - run: yarn install
       - run: yarn run build
       - run: yarn run ci:precheck
       - run: yarn run check
