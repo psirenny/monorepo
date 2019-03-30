@@ -85,7 +85,6 @@
     "postinstall": "run-s bootstrap",
     "postupdate": "lerna run postupdate",
     "prepublish": "run-s build",
-    "prepublishOnly": "run-s check",
     "publish": "lerna publish",
     "update": "run-s update:js update:yarn",
     "update:js": "yarn upgrade-interactive --latest",

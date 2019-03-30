@@ -84,7 +84,7 @@
     "@babel/preset-env": "^7.2.3",
     "babel-plugin-preval": "^3.0.1"
   },
-  "gitHead": "b4b4e8eb6366df007904285de9e9982f68a72f07",
+  "gitHead": "fbb0f8117c911984e930d5935e64067922ece22c",
   "homepage": "https://github.com/psirenny/monorepo/tree/master/packages/babel-preset",
   "keywords": [
     "babel",
