@@ -96,7 +96,7 @@
     "retext-contractions": "^2.1.3",
     "retext-diacritics": "^1.2.2",
     "retext-english": "^3.0.2",
-    "retext-equality": "^3.8.0",
+    "retext-equality": "^3.10.0",
     "retext-indefinite-article": "^1.1.5",
     "retext-intensify": "^3.0.2",
     "retext-passive": "^1.3.2",
