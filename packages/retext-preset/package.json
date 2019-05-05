@@ -91,7 +91,7 @@
   },
   "peerDependencies": {
     "@psirenny/dictionary": "^1.4.3",
-    "dictionary-en-us": "^2.0.0",
+    "dictionary-en-us": "^2.1.0",
     "retext-assuming": "^1.0.0",
     "retext-contractions": "^2.1.3",
     "retext-diacritics": "^1.2.2",
