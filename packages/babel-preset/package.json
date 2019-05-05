@@ -5,7 +5,7 @@
   "author": "Dennis Torres <djtorres0@gmail.com>",
   "bugs": "https://github.com/psirenny/monorepo/issues",
   "devDependencies": {
-    "dictionary-en-us": "2.0.0",
+    "dictionary-en-us": "2.1.1",
     "eslint": "5.15.3",
     "eslint-config-airbnb-base": "13.1.0",
     "eslint-plugin-array-func": "3.1.3",
