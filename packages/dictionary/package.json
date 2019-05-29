@@ -83,7 +83,7 @@
     "rollup": "1.7.4",
     "rollup-plugin-babel": "5.0.0-alpha.0",
     "rollup-plugin-flow-entry": "0.3.1",
-    "trash-cli": "1.4.0",
+    "trash-cli": "3.0.0",
     "unified": "7.1.0"
   },
   "gitHead": "fbb0f8117c911984e930d5935e64067922ece22c",
