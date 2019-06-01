@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.6.1](https://github.com/psirenny/monorepo/tree/master/packages/remark-preset/compare/@psirenny/remark-preset@1.6.0...@psirenny/remark-preset@1.6.1) (2019-06-01)
+
+**Note:** Version bump only for package @psirenny/remark-preset
+
+
+
+
+
 # [1.6.0](https://github.com/psirenny/monorepo/tree/master/packages/remark-preset/compare/@psirenny/remark-preset@1.5.6...@psirenny/remark-preset@1.6.0) (2019-06-01)
 
 

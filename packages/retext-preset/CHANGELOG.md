@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.6.1](https://github.com/psirenny/monorepo/tree/master/packages/retext-preset/compare/@psirenny/retext-preset@1.6.0...@psirenny/retext-preset@1.6.1) (2019-06-01)
+
+
+### Bug Fixes
+
+* **retext-preset:** move dependency to peerDependency ([44fb765](https://github.com/psirenny/monorepo/tree/master/packages/retext-preset/commit/44fb765))
+
+
+
+
+
 # [1.6.0](https://github.com/psirenny/monorepo/tree/master/packages/retext-preset/compare/@psirenny/retext-preset@1.5.6...@psirenny/retext-preset@1.6.0) (2019-06-01)
 
 
