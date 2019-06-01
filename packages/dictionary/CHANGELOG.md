@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.6.0](https://github.com/psirenny/monorepo/tree/master/packages/dictionary/compare/@psirenny/dictionary@1.5.6...@psirenny/dictionary@1.6.0) (2019-06-01)
+
+
+### Features
+
+* update all the things (including peer dependencies) ([aa95f4b](https://github.com/psirenny/monorepo/tree/master/packages/dictionary/commit/aa95f4b))
+
+
+
+
+
 ## [1.5.6](https://github.com/psirenny/monorepo/tree/master/packages/dictionary/compare/@psirenny/dictionary@1.5.5...@psirenny/dictionary@1.5.6) (2019-03-30)
 
 **Note:** Version bump only for package @psirenny/dictionary

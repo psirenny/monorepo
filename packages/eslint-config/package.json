@@ -1,6 +1,6 @@
 {
   "name": "@psirenny/eslint-config",
-  "version": "1.7.7",
+  "version": "1.8.0",
   "description": "psirenny's eslint config",
   "author": "Dennis Torres <djtorres0@gmail.com>",
   "bugs": "https://github.com/psirenny/monorepo/issues",

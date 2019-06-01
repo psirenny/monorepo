@@ -1,6 +1,6 @@
 {
   "name": "@psirenny/stylelint-config-styled-components",
-  "version": "1.1.5",
+  "version": "1.2.0",
   "description": "psirenny's stylelint styled-components config",
   "author": "Dennis Torres <djtorres0@gmail.com>",
   "bugs": "https://github.com/psirenny/monorepo/issues",

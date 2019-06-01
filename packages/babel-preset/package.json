@@ -1,6 +1,6 @@
 {
   "name": "@psirenny/babel-preset",
-  "version": "1.6.6",
+  "version": "1.7.0",
   "description": "psirenny's babel preset",
   "author": "Dennis Torres <djtorres0@gmail.com>",
   "bugs": "https://github.com/psirenny/monorepo/issues",
