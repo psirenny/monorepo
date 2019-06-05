@@ -53,7 +53,7 @@
     "retext-simplify": "4.1.2",
     "retext-spell": "2.4.0",
     "retext-syntax-mentions": "1.1.5",
-    "retext-syntax-urls": "1.0.1",
+    "retext-syntax-urls": "1.0.2",
     "rollup": "1.13.1",
     "rollup-plugin-flow": "1.1.1",
     "rollup-plugin-flow-entry": "0.3.1",
