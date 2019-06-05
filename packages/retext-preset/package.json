@@ -79,7 +79,7 @@
     "retext-simplify": "4.1.2",
     "retext-spell": "2.4.0",
     "retext-syntax-mentions": "1.1.5",
-    "retext-syntax-urls": "1.0.1",
+    "retext-syntax-urls": "1.0.2",
     "rollup": "1.13.1",
     "rollup-plugin-babel": "5.0.0-alpha.0",
     "rollup-plugin-flow-entry": "0.3.1",
@@ -106,7 +106,7 @@
     "retext-simplify": "^4.1.0",
     "retext-spell": "^2.4.0",
     "retext-syntax-mentions": "^1.1.0",
-    "retext-syntax-urls": "^1.0.0"
+    "retext-syntax-urls": "^1.0.2"
   },
   "gitHead": "fbb0f8117c911984e930d5935e64067922ece22c",
   "homepage": "https://github.com/psirenny/monorepo/tree/master/packages/retext-preset",
