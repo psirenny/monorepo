@@ -105,7 +105,7 @@
     "retext-sentence-spacing": "^2.1.0",
     "retext-simplify": "^4.1.0",
     "retext-spell": "^2.4.0",
-    "retext-syntax-mentions": "^1.1.0",
+    "retext-syntax-mentions": "^1.1.6",
     "retext-syntax-urls": "^1.0.0"
   },
   "gitHead": "fbb0f8117c911984e930d5935e64067922ece22c",
