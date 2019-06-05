@@ -104,7 +104,7 @@
     "retext-repeated-words": "^1.2.0",
     "retext-sentence-spacing": "^2.1.0",
     "retext-simplify": "^4.1.0",
-    "retext-spell": "^2.4.0",
+    "retext-spell": "^2.4.1",
     "retext-syntax-mentions": "^1.1.0",
     "retext-syntax-urls": "^1.0.0"
   },
