@@ -30,7 +30,7 @@
     "@babel/preset-env": "7.4.5",
     "@babel/preset-flow": "7.0.0",
     "@psirenny/retext-preset": "1.6.1",
-    "babel-eslint": "10.0.1",
+    "babel-eslint": "10.0.2",
     "babel-plugin-preval": "3.0.1",
     "dictionary-en-us": "2.1.1",
     "eslint": "5.16.0",
