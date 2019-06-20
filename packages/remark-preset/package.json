@@ -90,7 +90,7 @@
     "@psirenny/retext-preset": "^1.5.0",
     "remark-lint-blockquote-indentation": "^1.0.0",
     "remark-lint-checkbox-character-style": "^1.0.0",
-    "remark-lint-code-block-style": "^1.0.0",
+    "remark-lint-code-block-style": "^1.0.3",
     "remark-lint-emphasis-marker": "^1.0.0",
     "remark-lint-fenced-code-marker": "^1.0.0",
     "remark-lint-heading-style": "^1.0.0",
