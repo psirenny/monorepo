@@ -49,7 +49,7 @@
     "npm-package-json-lint": "3.6.1",
     "npm-run-all": "4.1.5",
     "remark-cli": "6.0.1",
-    "remark-lint-blockquote-indentation": "1.0.2",
+    "remark-lint-blockquote-indentation": "1.0.3",
     "remark-lint-checkbox-character-style": "1.0.2",
     "remark-lint-code-block-style": "1.0.2",
     "remark-lint-emphasis-marker": "1.0.2",
