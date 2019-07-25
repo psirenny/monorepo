@@ -1,6 +1,6 @@
 {
   "name": "@psirenny/graphql-schema-linter-config",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "psirenny's graphql schema lint config",
   "author": "Dennis Torres <djtorres0@gmail.com>",
   "bugs": "https://github.com/psirenny/monorepo/issues",

@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/psirenny/monorepo/tree/master/packages/stylelint-config-styled-components/compare/@psirenny/stylelint-config-styled-components@1.2.0...@psirenny/stylelint-config-styled-components@1.3.0) (2019-07-25)
+
+
+### Features
+
+* **stylelint-config-styled-components:** lint important! ([3ccdcea](https://github.com/psirenny/monorepo/tree/master/packages/stylelint-config-styled-components/commit/3ccdcea))
+* **stylelint-config-styled-components:** specify parserPlugins ([4780ddc](https://github.com/psirenny/monorepo/tree/master/packages/stylelint-config-styled-components/commit/4780ddc))
+
+
+
+
+
 # [1.2.0](https://github.com/psirenny/monorepo/tree/master/packages/stylelint-config-styled-components/compare/@psirenny/stylelint-config-styled-components@1.1.5...@psirenny/stylelint-config-styled-components@1.2.0) (2019-06-01)
 
 

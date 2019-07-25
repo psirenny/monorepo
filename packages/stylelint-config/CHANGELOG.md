@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.1](https://github.com/psirenny/monorepo/tree/master/packages/stylelint-config/compare/@psirenny/stylelint-config@1.3.0...@psirenny/stylelint-config@1.3.1) (2019-07-25)
+
+**Note:** Version bump only for package @psirenny/stylelint-config
+
+
+
+
+
 # [1.3.0](https://github.com/psirenny/monorepo/tree/master/packages/stylelint-config/compare/@psirenny/stylelint-config@1.2.3...@psirenny/stylelint-config@1.3.0) (2019-06-01)
 
 
