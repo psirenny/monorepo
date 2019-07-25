@@ -87,7 +87,7 @@
     "unified": "8.3.2"
   },
   "peerDependencies": {
-    "@psirenny/dictionary": "^1.6.0",
+    "@psirenny/dictionary": "^1.6.1",
     "dictionary-en-us": "^2.1.0",
     "retext-assuming": "^1.0.0",
     "retext-contractions": "^2.1.0",
