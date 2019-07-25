@@ -6,7 +6,26 @@ export default {
     'stylelint-config-styled-components',
   ],
   processors: [
-    'stylelint-processor-styled-components',
+    ['stylelint-processor-styled-components', {
+      parserPlugins: [
+        'jsx',
+        'objectRestSpread',
+        ['decorators', { decoratorsBeforeExport: true }],
+        'classProperties',
+        'exportExtensions',
+        'asyncGenerators',
+        'functionBind',
+        'functionSent',
+        'dynamicImport',
+        'optionalCatchBinding',
+        'optionalChaining',
+        'exportDefaultFrom',
+        'exportNamespaceFrom',
+        'nullishCoalescingOperator',
+        'numericSeparator',
+        'throwExpressions',
+      ],
+    }],
   ],
   rules: {
     'block-opening-brace-space-after': null,
