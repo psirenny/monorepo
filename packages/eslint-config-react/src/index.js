@@ -1,10 +1,7 @@
 // @flow strict
 
 export default {
-  extends: [
-    'eslint-config-airbnb',
-    '@psirenny/eslint-config',
-  ],
+  extends: 'eslint-config-airbnb',
   rules: {
     'react/jsx-filename-extension': [0],
   },

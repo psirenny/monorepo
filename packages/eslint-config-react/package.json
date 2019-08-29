@@ -88,7 +88,6 @@
     "unified": "8.3.2"
   },
   "peerDependencies": {
-    "@psirenny/eslint-config": "^1.7.0",
     "eslint-config-airbnb": "^18.0.1"
   },
   "gitHead": "fbb0f8117c911984e930d5935e64067922ece22c",
