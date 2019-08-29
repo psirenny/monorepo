@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](http://github.com/psirenny/monorepo/tree/master/packages/eslint-config-react/compare/@psirenny/eslint-config-react@2.0.0...@psirenny/eslint-config-react@2.0.1) (2019-08-29)
+
+
+### Bug Fixes
+
+* fix peer dependency versions ([4c297df](http://github.com/psirenny/monorepo/tree/master/packages/eslint-config-react/commit/4c297df))
+
+
+
+
+
 # [2.0.0](http://github.com/psirenny/monorepo/tree/master/packages/eslint-config-react/compare/@psirenny/eslint-config-react@1.11.1...@psirenny/eslint-config-react@2.0.0) (2019-08-29)
 
 

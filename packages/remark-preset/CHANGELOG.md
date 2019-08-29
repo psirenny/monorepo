@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](http://github.com/psirenny/monorepo/tree/master/packages/remark-preset/compare/@psirenny/remark-preset@2.0.0...@psirenny/remark-preset@2.0.1) (2019-08-29)
+
+
+### Bug Fixes
+
+* fix peer dependency versions ([4c297df](http://github.com/psirenny/monorepo/tree/master/packages/remark-preset/commit/4c297df))
+
+
+
+
+
 # [2.0.0](http://github.com/psirenny/monorepo/tree/master/packages/remark-preset/compare/@psirenny/remark-preset@1.6.2...@psirenny/remark-preset@2.0.0) (2019-08-29)
 
 
