@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](http://github.com/psirenny/monorepo/tree/master/packages/stylelint-config/compare/@psirenny/stylelint-config@1.3.1...@psirenny/stylelint-config@2.0.0) (2019-08-29)
+
+
+### chore
+
+* update all dependencies (packages, yarn, etc.) ([f62e8c8](http://github.com/psirenny/monorepo/tree/master/packages/stylelint-config/commit/f62e8c8))
+
+
+### BREAKING CHANGES
+
+* major version changes for peer dependencies
+
+
+
+
+
 ## [1.2.3](https://github.com/psirenny/monorepo/tree/master/packages/stylelint-config/compare/@psirenny/stylelint-config@1.2.2...@psirenny/stylelint-config@1.2.3) (2019-03-30)
 
 **Note:** Version bump only for package @psirenny/stylelint-config

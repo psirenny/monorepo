@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](http://github.com/psirenny/monorepo/tree/master/packages/browserslist-config-node/compare/@psirenny/browserslist-config-node@1.6.1...@psirenny/browserslist-config-node@2.0.0) (2019-08-29)
+
+
+### chore
+
+* update all dependencies (packages, yarn, etc.) ([f62e8c8](http://github.com/psirenny/monorepo/tree/master/packages/browserslist-config-node/commit/f62e8c8))
+
+
+### BREAKING CHANGES
+
+* major version changes for peer dependencies
+
+
+
+
+
 ## [1.5.6](https://github.com/psirenny/monorepo/tree/master/packages/browserslist-config-node/compare/@psirenny/browserslist-config-node@1.5.5...@psirenny/browserslist-config-node@1.5.6) (2019-03-30)
 
 **Note:** Version bump only for package @psirenny/browserslist-config-node
