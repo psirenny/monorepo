@@ -66,6 +66,7 @@ export default {
     'require-main': 'error',
     'require-module': 'error',
     'require-name': 'error',
+    'require-repository': 'error',
     'require-version': 'error',
     'scripts-type': 'error',
     'version-format': 'error',
