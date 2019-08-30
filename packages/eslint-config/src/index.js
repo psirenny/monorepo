@@ -48,7 +48,6 @@ export default {
     }],
     'optimize-regex/optimize-regex': [2],
     'quote-props': [2, 'consistent-as-needed'],
-    'sort-imports': [2],
     'sort-keys': [2, 'asc', { natural: true }],
     'sort-vars': [2],
     'unicorn/error-message': [2],
