@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.2](http://github.com/psirenny/monorepo/tree/master/packages/stylelint-config-styled-components/compare/@psirenny/stylelint-config-styled-components@2.0.1...@psirenny/stylelint-config-styled-components@2.0.2) (2019-09-04)
+
+
+### Bug Fixes
+
+* **eslint-config:** remove sort-import rule ([00818d2](http://github.com/psirenny/monorepo/tree/master/packages/stylelint-config-styled-components/commit/00818d2))
+
+
+
+
+
 ## [2.0.1](http://github.com/psirenny/monorepo/tree/master/packages/stylelint-config-styled-components/compare/@psirenny/stylelint-config-styled-components@2.0.0...@psirenny/stylelint-config-styled-components@2.0.1) (2019-08-29)
 
 

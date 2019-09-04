@@ -1,6 +1,6 @@
 {
   "name": "@psirenny/npm-package-json-lint-config",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "psirenny's npm package json lint config",
   "author": "Dennis Torres <djtorres0@gmail.com>",
   "bugs": "https://github.com/psirenny/monorepo/issues",

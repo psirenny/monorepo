@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](http://github.com/psirenny/monorepo/tree/master/packages/npm-package-json-lint-config/compare/@psirenny/npm-package-json-lint-config@2.0.0...@psirenny/npm-package-json-lint-config@2.0.1) (2019-09-04)
+
+
+### Bug Fixes
+
+* **eslint-config:** remove sort-import rule ([00818d2](http://github.com/psirenny/monorepo/tree/master/packages/npm-package-json-lint-config/commit/00818d2))
+
+
+
+
+
 # [2.0.0](http://github.com/psirenny/monorepo/tree/master/packages/npm-package-json-lint-config/compare/@psirenny/npm-package-json-lint-config@1.4.1...@psirenny/npm-package-json-lint-config@2.0.0) (2019-08-29)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](http://github.com/psirenny/monorepo/tree/master/packages/babel-preset/compare/@psirenny/babel-preset@2.0.0...@psirenny/babel-preset@2.0.1) (2019-09-04)
+
+
+### Bug Fixes
+
+* **eslint-config:** remove sort-import rule ([00818d2](http://github.com/psirenny/monorepo/tree/master/packages/babel-preset/commit/00818d2))
+
+
+
+
+
 # [2.0.0](http://github.com/psirenny/monorepo/tree/master/packages/babel-preset/compare/@psirenny/babel-preset@1.7.1...@psirenny/babel-preset@2.0.0) (2019-08-29)
 
 
