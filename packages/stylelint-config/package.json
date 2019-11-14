@@ -93,7 +93,7 @@
     "stylelint-config-recommended": "^3.0.0",
     "stylelint-order": "^3.0.1"
   },
-  "gitHead": "fbb0f8117c911984e930d5935e64067922ece22c",
+  "gitHead": "c7038e072b611fb178978e6dc33764962048049f",
   "homepage": "https://github.com/psirenny/monorepo/tree/master/packages/stylelint-config",
   "keywords": [
     "config",
