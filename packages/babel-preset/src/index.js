@@ -1,6 +1,8 @@
 // @flow strict
 
-export default (_: mixed, opts: { [string]: mixed }) => ({
+type Options = { [string]: mixed };
+
+export default (_: mixed, opts: Options) => ({
   plugins: [
     ['@babel/plugin-transform-flow-strip-types'],
     ['@babel/plugin-proposal-class-properties', { loose: false }],
@@ -25,6 +27,7 @@ export default (_: mixed, opts: { [string]: mixed }) => ({
     ['babel-plugin-preval'],
   ],
   presets: [
+    // $FlowFixMe
     ['@babel/preset-env', { loose: true, shippedProposals: true, ...opts }],
   ],
 });
