@@ -90,7 +90,7 @@
     "unified": "8.4.2"
   },
   "peerDependencies": {
-    "@psirenny/dictionary": "^2.0.0",
+    "@psirenny/dictionary": "^2.0.2",
     "dictionary-en-us": "^2.1.1",
     "retext-assuming": "^1.0.0",
     "retext-contractions": "^3.0.0",
