@@ -33,7 +33,7 @@
     "@babel/preset-env": "7.7.1",
     "@babel/preset-flow": "7.0.0",
     "babel-eslint": "10.0.3",
-    "babel-plugin-preval": "3.0.1",
+    "babel-plugin-preval": "4.0.0",
     "dictionary-en-us": "2.1.1",
     "eslint": "6.6.0",
     "eslint-config-airbnb-base": "14.0.0",
