@@ -8,7 +8,7 @@
     "@commitlint/cli": "8.2.0",
     "@commitlint/config-conventional": "8.2.0",
     "@commitlint/config-lerna-scopes": "8.2.0",
-    "circleci-bin": "1.1.16",
+    "circleci-bin": "1.1.18",
     "flow-mono-cli": "1.5.0",
     "greenkeeper-lockfile": "2.8.0",
     "husky": "3.0.9",
