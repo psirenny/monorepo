@@ -1,4 +1,4 @@
-// flow-typed signature: 0a8f550f9fa0c5b733e1edd77c6e20b5
+// flow-typed signature: 26347f7c47cc1c252bfd0dcef56e377a
 // flow-typed version: <<STUB>>/stylelint_v^11.1.1/flow_v0.112.0
 
 /**
@@ -926,10 +926,6 @@ declare module 'stylelint/lib/testUtils/basicChecks' {
   declare module.exports: any;
 }
 
-declare module 'stylelint/lib/testUtils/createRuleTester' {
-  declare module.exports: any;
-}
-
 declare module 'stylelint/lib/testUtils/mergeTestDescriptions' {
   declare module.exports: any;
 }
@@ -1090,10 +1086,6 @@ declare module 'stylelint/lib/utils/hasTplInterpolation' {
   declare module.exports: any;
 }
 
-declare module 'stylelint/lib/utils/hasUnresolvedNestedSelector' {
-  declare module.exports: any;
-}
-
 declare module 'stylelint/lib/utils/isAfterComment' {
   declare module.exports: any;
 }
@@ -1159,6 +1151,10 @@ declare module 'stylelint/lib/utils/isKeyframeRule' {
 }
 
 declare module 'stylelint/lib/utils/isKeyframeSelector' {
+  declare module.exports: any;
+}
+
+declare module 'stylelint/lib/utils/isLessVariable' {
   declare module.exports: any;
 }
 
@@ -1254,10 +1250,6 @@ declare module 'stylelint/lib/utils/isWhitespace' {
   declare module.exports: any;
 }
 
-declare module 'stylelint/lib/utils/levenshteinDistance' {
-  declare module.exports: any;
-}
-
 declare module 'stylelint/lib/utils/matchesStringOrRegExp' {
   declare module.exports: any;
 }
@@ -1331,10 +1323,6 @@ declare module 'stylelint/lib/utils/validateOptions' {
 }
 
 declare module 'stylelint/lib/utils/whitespaceChecker' {
-  declare module.exports: any;
-}
-
-declare module 'stylelint/lib/vendor/writeFileAtomic' {
   declare module.exports: any;
 }
 
@@ -2555,9 +2543,6 @@ declare module 'stylelint/lib/standalone.js' {
 declare module 'stylelint/lib/testUtils/basicChecks.js' {
   declare module.exports: $Exports<'stylelint/lib/testUtils/basicChecks'>;
 }
-declare module 'stylelint/lib/testUtils/createRuleTester.js' {
-  declare module.exports: $Exports<'stylelint/lib/testUtils/createRuleTester'>;
-}
 declare module 'stylelint/lib/testUtils/mergeTestDescriptions.js' {
   declare module.exports: $Exports<'stylelint/lib/testUtils/mergeTestDescriptions'>;
 }
@@ -2678,9 +2663,6 @@ declare module 'stylelint/lib/utils/hasScssInterpolation.js' {
 declare module 'stylelint/lib/utils/hasTplInterpolation.js' {
   declare module.exports: $Exports<'stylelint/lib/utils/hasTplInterpolation'>;
 }
-declare module 'stylelint/lib/utils/hasUnresolvedNestedSelector.js' {
-  declare module.exports: $Exports<'stylelint/lib/utils/hasUnresolvedNestedSelector'>;
-}
 declare module 'stylelint/lib/utils/isAfterComment.js' {
   declare module.exports: $Exports<'stylelint/lib/utils/isAfterComment'>;
 }
@@ -2731,6 +2713,9 @@ declare module 'stylelint/lib/utils/isKeyframeRule.js' {
 }
 declare module 'stylelint/lib/utils/isKeyframeSelector.js' {
   declare module.exports: $Exports<'stylelint/lib/utils/isKeyframeSelector'>;
+}
+declare module 'stylelint/lib/utils/isLessVariable.js' {
+  declare module.exports: $Exports<'stylelint/lib/utils/isLessVariable'>;
 }
 declare module 'stylelint/lib/utils/isLogicalCombination.js' {
   declare module.exports: $Exports<'stylelint/lib/utils/isLogicalCombination'>;
@@ -2801,9 +2786,6 @@ declare module 'stylelint/lib/utils/isVariable.js' {
 declare module 'stylelint/lib/utils/isWhitespace.js' {
   declare module.exports: $Exports<'stylelint/lib/utils/isWhitespace'>;
 }
-declare module 'stylelint/lib/utils/levenshteinDistance.js' {
-  declare module.exports: $Exports<'stylelint/lib/utils/levenshteinDistance'>;
-}
 declare module 'stylelint/lib/utils/matchesStringOrRegExp.js' {
   declare module.exports: $Exports<'stylelint/lib/utils/matchesStringOrRegExp'>;
 }
@@ -2863,9 +2845,6 @@ declare module 'stylelint/lib/utils/validateOptions.js' {
 }
 declare module 'stylelint/lib/utils/whitespaceChecker.js' {
   declare module.exports: $Exports<'stylelint/lib/utils/whitespaceChecker'>;
-}
-declare module 'stylelint/lib/vendor/writeFileAtomic.js' {
-  declare module.exports: $Exports<'stylelint/lib/vendor/writeFileAtomic'>;
 }
 declare module 'stylelint/lib/writeOutputFile.js' {
   declare module.exports: $Exports<'stylelint/lib/writeOutputFile'>;

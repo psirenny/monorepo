@@ -19,6 +19,7 @@ export default {
     'man-type': 'error',
     'name-format': 'error',
     'name-type': 'error',
+    'no-repeated-dependencies': 'error',
     'optionalDependencies-type': 'error',
     'os-type': 'error',
     'peerDependencies-type': 'error',
@@ -28,6 +29,7 @@ export default {
     'prefer-alphabetical-devDependencies': 'error',
     'prefer-alphabetical-optionalDependencies': 'error',
     'prefer-alphabetical-peerDependencies': 'error',
+    'prefer-alphabetical-scripts': 'error',
     'prefer-property-order': ['error', [
       'name',
       'version',

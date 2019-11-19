@@ -1,4 +1,4 @@
-// flow-typed signature: 6e2f4a74c85af8a9dbda7962b8d61392
+// flow-typed signature: 53c014d32f16cecbc298bcd934eb28b6
 // flow-typed version: <<STUB>>/eslint-plugin-unicorn_v^12.0.0/flow_v0.112.0
 
 /**
@@ -202,11 +202,19 @@ declare module 'eslint-plugin-unicorn/rules/utils/cartesian-product-samples' {
   declare module.exports: any;
 }
 
-declare module 'eslint-plugin-unicorn/rules/utils/get-docs-url' {
+declare module 'eslint-plugin-unicorn/rules/utils/get-documentation-url' {
+  declare module.exports: any;
+}
+
+declare module 'eslint-plugin-unicorn/rules/utils/is-literal-value' {
   declare module.exports: any;
 }
 
 declare module 'eslint-plugin-unicorn/rules/utils/is-method-named' {
+  declare module.exports: any;
+}
+
+declare module 'eslint-plugin-unicorn/rules/utils/is-object-method' {
   declare module.exports: any;
 }
 
@@ -364,11 +372,17 @@ declare module 'eslint-plugin-unicorn/rules/utils/avoid-capture.js' {
 declare module 'eslint-plugin-unicorn/rules/utils/cartesian-product-samples.js' {
   declare module.exports: $Exports<'eslint-plugin-unicorn/rules/utils/cartesian-product-samples'>;
 }
-declare module 'eslint-plugin-unicorn/rules/utils/get-docs-url.js' {
-  declare module.exports: $Exports<'eslint-plugin-unicorn/rules/utils/get-docs-url'>;
+declare module 'eslint-plugin-unicorn/rules/utils/get-documentation-url.js' {
+  declare module.exports: $Exports<'eslint-plugin-unicorn/rules/utils/get-documentation-url'>;
+}
+declare module 'eslint-plugin-unicorn/rules/utils/is-literal-value.js' {
+  declare module.exports: $Exports<'eslint-plugin-unicorn/rules/utils/is-literal-value'>;
 }
 declare module 'eslint-plugin-unicorn/rules/utils/is-method-named.js' {
   declare module.exports: $Exports<'eslint-plugin-unicorn/rules/utils/is-method-named'>;
+}
+declare module 'eslint-plugin-unicorn/rules/utils/is-object-method.js' {
+  declare module.exports: $Exports<'eslint-plugin-unicorn/rules/utils/is-object-method'>;
 }
 declare module 'eslint-plugin-unicorn/rules/utils/is-valid-variable-name.js' {
   declare module.exports: $Exports<'eslint-plugin-unicorn/rules/utils/is-valid-variable-name'>;
