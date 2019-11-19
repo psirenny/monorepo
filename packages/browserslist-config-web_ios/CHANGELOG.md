@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](http://github.com/psirenny/monorepo/tree/master/packages/browserslist-config-web_ios/compare/@psirenny/browserslist-config-web_ios@2.0.2...@psirenny/browserslist-config-web_ios@3.0.0) (2019-11-19)
+
+
+### Features
+
+* **npm-package-json-lint-config:** add 2 new rules ([22d8294](http://github.com/psirenny/monorepo/tree/master/packages/browserslist-config-web_ios/commit/22d82944175374b223c9b531d0e612c66755c8fe))
+
+
+### BREAKING CHANGES
+
+* **npm-package-json-lint-config:** * require alphabetical sorting of scripts
+* prohibit duplicate depedencies and devDependencies
+
+
+
+
+
 ## [2.0.2](http://github.com/psirenny/monorepo/tree/master/packages/browserslist-config-web_ios/compare/@psirenny/browserslist-config-web_ios@2.0.1...@psirenny/browserslist-config-web_ios@2.0.2) (2019-11-14)
 
 **Note:** Version bump only for package @psirenny/browserslist-config-web_ios
