@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](http://github.com/psirenny/monorepo/tree/master/packages/graphql-schema-linter-config/compare/@psirenny/graphql-schema-linter-config@3.0.0...@psirenny/graphql-schema-linter-config@4.0.0) (2019-12-12)
+
+
+### Features
+
+* **graphql-schema-linter-config:** add 2 new rules ([283baa7](http://github.com/psirenny/monorepo/tree/master/packages/graphql-schema-linter-config/commit/283baa71db582287849bc468ca4b97884957e56a))
+
+
+### BREAKING CHANGES
+
+* **graphql-schema-linter-config:** see above rules
+
+
+
+
+
 # [3.0.0](http://github.com/psirenny/monorepo/tree/master/packages/graphql-schema-linter-config/compare/@psirenny/graphql-schema-linter-config@2.0.2...@psirenny/graphql-schema-linter-config@3.0.0) (2019-11-19)
 
 

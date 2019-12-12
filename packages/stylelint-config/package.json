@@ -1,6 +1,6 @@
 {
   "name": "@psirenny/stylelint-config",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "psirenny's stylelint config",
   "author": "Dennis Torres <djtorres0@gmail.com>",
   "bugs": "https://github.com/psirenny/monorepo/issues",

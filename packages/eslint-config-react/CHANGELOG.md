@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](http://github.com/psirenny/monorepo/tree/master/packages/eslint-config-react/compare/@psirenny/eslint-config-react@3.0.0...@psirenny/eslint-config-react@3.1.0) (2019-12-12)
+
+
+### Features
+
+* **eslint-config-react:** relax no-props-spreading rule ([8c0298f](http://github.com/psirenny/monorepo/tree/master/packages/eslint-config-react/commit/8c0298fcad6e6fc4b5f5a59d49e0bdf38fa73b51))
+
+
+
+
+
 # [3.0.0](http://github.com/psirenny/monorepo/tree/master/packages/eslint-config-react/compare/@psirenny/eslint-config-react@2.0.3...@psirenny/eslint-config-react@3.0.0) (2019-11-19)
 
 

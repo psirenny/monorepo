@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](http://github.com/psirenny/monorepo/tree/master/packages/eslint-config/compare/@psirenny/eslint-config@3.0.0...@psirenny/eslint-config@3.1.0) (2019-12-12)
+
+
+### Features
+
+* **eslint-config:** relax line length rules ([af80074](http://github.com/psirenny/monorepo/tree/master/packages/eslint-config/commit/af8007455dec333e96a15f7893ea0fec3db24965))
+
+
+
+
+
 # [3.0.0](http://github.com/psirenny/monorepo/tree/master/packages/eslint-config/compare/@psirenny/eslint-config@2.0.2...@psirenny/eslint-config@3.0.0) (2019-11-19)
 
 

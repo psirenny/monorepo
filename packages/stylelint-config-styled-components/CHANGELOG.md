@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.1](http://github.com/psirenny/monorepo/tree/master/packages/stylelint-config-styled-components/compare/@psirenny/stylelint-config-styled-components@3.0.0...@psirenny/stylelint-config-styled-components@3.0.1) (2019-12-12)
+
+**Note:** Version bump only for package @psirenny/stylelint-config-styled-components
+
+
+
+
+
 # [3.0.0](http://github.com/psirenny/monorepo/tree/master/packages/stylelint-config-styled-components/compare/@psirenny/stylelint-config-styled-components@2.0.3...@psirenny/stylelint-config-styled-components@3.0.0) (2019-11-19)
 
 
