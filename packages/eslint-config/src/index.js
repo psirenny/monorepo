@@ -32,19 +32,40 @@ export default {
     'flowtype/sort-keys': [2, 'asc', { natural: true }],
     'flowtype/type-id-match': [2, '^([A-Z][a-z0-9]*)+$'],
     'function-paren-newline': [0, 'consistent'],
-    'max-len': [2, 160, 2, {
+    'max-len': [2, {
+      code: 160,
       ignoreComments: false,
       ignorePattern: '^(ex|im)port (.*)',
+      ignoreRegExpLiterals: true,
+      ignoreStrings: true,
+      ignoreTemplateLiterals: true,
       ignoreUrls: true,
+      tabWidth: 2,
     }],
     'no-duplicate-imports': [0],
     'no-multiple-empty-lines': [2, { max: 1 }],
     'no-underscore-dangle': [0],
-    'object-curly-newline': ['error', {
-      ExportDeclaration: { consistent: true, minProperties: 5, multiline: true },
-      ImportDeclaration: { consistent: true, minProperties: 5, multiline: true },
-      ObjectExpression: { consistent: true, minProperties: 5, multiline: true },
-      ObjectPattern: { consistent: true, minProperties: 5, multiline: true },
+    'object-curly-newline': [2, {
+      ExportDeclaration: {
+        consistent: true,
+        minProperties: 6,
+        multiline: true,
+      },
+      ImportDeclaration: {
+        consistent: true,
+        minProperties: 6,
+        multiline: true,
+      },
+      ObjectExpression: {
+        consistent: true,
+        minProperties: 6,
+        multiline: true,
+      },
+      ObjectPattern: {
+        consistent: true,
+        minProperties: 6,
+        multiline: true,
+      },
     }],
     'optimize-regex/optimize-regex': [2],
     'quote-props': [2, 'consistent-as-needed'],
