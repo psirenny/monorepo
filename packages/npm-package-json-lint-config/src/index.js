@@ -19,6 +19,7 @@ export default {
     'man-type': 'error',
     'name-format': 'error',
     'name-type': 'error',
+    'no-duplicate-properties': 'error',
     'no-repeated-dependencies': 'error',
     'optionalDependencies-type': 'error',
     'os-type': 'error',
