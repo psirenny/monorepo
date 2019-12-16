@@ -87,7 +87,7 @@
     "unified": "8.4.2"
   },
   "peerDependencies": {
-    "@psirenny/retext-preset": "^2.0.0",
+    "@psirenny/retext-preset": "^3.0.2",
     "remark-lint-blockquote-indentation": "^1.0.3",
     "remark-lint-checkbox-character-style": "^1.0.3",
     "remark-lint-code-block-style": "^1.0.3",
