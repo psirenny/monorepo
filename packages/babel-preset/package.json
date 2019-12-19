@@ -82,7 +82,7 @@
     "@babel/plugin-syntax-dynamic-import": "^7.7.4",
     "@babel/plugin-syntax-import-meta": "^7.7.4",
     "@babel/plugin-transform-flow-strip-types": "^7.7.4",
-    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-env": "^7.7.7",
     "babel-plugin-preval": "^3.0.1"
   },
   "gitHead": "c7038e072b611fb178978e6dc33764962048049f",
