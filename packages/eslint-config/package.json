@@ -81,7 +81,7 @@
     "retext-spell": "3.0.0",
     "retext-syntax-mentions": "1.1.6",
     "retext-syntax-urls": "1.0.2",
-    "rollup": "1.27.13",
+    "rollup": "1.27.14",
     "rollup-plugin-babel": "5.0.0-alpha.0",
     "rollup-plugin-flow-entry": "0.3.3",
     "trash-cli": "3.0.0",
