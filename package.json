@@ -7,7 +7,7 @@
   "devDependencies": {
     "@commitlint/cli": "8.3.4",
     "@commitlint/config-conventional": "8.3.4",
-    "@commitlint/config-lerna-scopes": "8.2.0",
+    "@commitlint/config-lerna-scopes": "8.3.4",
     "circleci-bin": "1.1.18",
     "flow-mono-cli": "1.5.2",
     "greenkeeper-lockfile": "2.8.0",
