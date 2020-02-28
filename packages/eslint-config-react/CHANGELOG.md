@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.2.0](http://github.com/psirenny/monorepo/tree/master/packages/eslint-config-react/compare/@psirenny/eslint-config-react@3.1.2...@psirenny/eslint-config-react@3.2.0) (2020-02-28)
+
+
+### Features
+
+* **eslint-config-react:** allow FormattedNumber style prop ([d190617](http://github.com/psirenny/monorepo/tree/master/packages/eslint-config-react/commit/d1906174c4f9ed10ccec83bb71289de16bee34ed))
+
+
+
+
+
 ## [3.1.2](http://github.com/psirenny/monorepo/tree/master/packages/eslint-config-react/compare/@psirenny/eslint-config-react@3.1.1...@psirenny/eslint-config-react@3.1.2) (2020-02-27)
 
 **Note:** Version bump only for package @psirenny/eslint-config-react
