@@ -32,7 +32,7 @@
     "@psirenny/retext-preset": "3.0.3",
     "babel-eslint": "10.1.0",
     "babel-plugin-preval": "4.0.0",
-    "dictionary-en-us": "2.2.1",
+    "dictionary-en-us": "3.0.0",
     "eslint": "6.8.0",
     "eslint-config-airbnb-base": "14.0.0",
     "eslint-plugin-array-func": "3.1.4",
