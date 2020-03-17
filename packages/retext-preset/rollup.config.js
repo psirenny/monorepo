@@ -6,7 +6,7 @@ import rollupPluginFlowEntry from 'rollup-plugin-flow-entry';
 export default {
   external: [
     '@psirenny/dictionary',
-    'dictionary-en-us',
+    'dictionary-en',
     'retext-assuming',
     'retext-contractions',
     'retext-diacritics',

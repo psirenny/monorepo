@@ -3,7 +3,7 @@
 /* eslint-disable import/prefer-default-export */
 
 import dictionary from '@psirenny/dictionary';
-import dictionaryEnUs from 'dictionary-en-us';
+import dictionaryEn from 'dictionary-en';
 import retextAssuming from 'retext-assuming';
 import retextContractions from 'retext-contractions';
 import retextDiacritics from 'retext-diacritics';
@@ -41,5 +41,5 @@ export const plugins = [
   [retextSimplify],
   [retextSyntaxMentions],
   [retextSyntaxUrls],
-  [retextSpell, { dictionary: dictionaryEnUs, personal: dictionary }],
+  [retextSpell, { dictionary: dictionaryEn, personal: dictionary }],
 ];
