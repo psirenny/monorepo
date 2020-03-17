@@ -29,7 +29,7 @@
     "@babel/plugin-transform-flow-strip-types": "7.8.3",
     "@babel/preset-env": "7.8.7",
     "@babel/preset-flow": "7.8.3",
-    "@psirenny/retext-preset": "3.0.2",
+    "@psirenny/retext-preset": "4.0.0",
     "babel-eslint": "10.1.0",
     "babel-plugin-preval": "4.0.0",
     "dictionary-en": "3.0.0",
