@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](http://github.com/psirenny/monorepo/tree/master/packages/stylelint-config/compare/@psirenny/stylelint-config@3.0.3...@psirenny/stylelint-config@4.0.0) (2020-03-17)
+
+
+### Features
+
+* **eslint-config:** update eslint config rules ([a2cb7b2](http://github.com/psirenny/monorepo/tree/master/packages/stylelint-config/commit/a2cb7b2199a9eadbf5f6040d7e1235480f115780))
+
+
+### BREAKING CHANGES
+
+* **eslint-config:** * replaceAll is preferred over global regex
+* modern APIs are preferred
+
+
+
+
+
 ## [3.0.3](http://github.com/psirenny/monorepo/tree/master/packages/stylelint-config/compare/@psirenny/stylelint-config@3.0.2...@psirenny/stylelint-config@3.0.3) (2020-02-27)
 
 **Note:** Version bump only for package @psirenny/stylelint-config

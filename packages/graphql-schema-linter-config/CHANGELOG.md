@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](http://github.com/psirenny/monorepo/tree/master/packages/graphql-schema-linter-config/compare/@psirenny/graphql-schema-linter-config@4.0.2...@psirenny/graphql-schema-linter-config@5.0.0) (2020-03-17)
+
+
+### Features
+
+* **eslint-config:** update eslint config rules ([a2cb7b2](http://github.com/psirenny/monorepo/tree/master/packages/graphql-schema-linter-config/commit/a2cb7b2199a9eadbf5f6040d7e1235480f115780))
+* **npm-package-json-lint-config:** add description format rule ([bbe1d46](http://github.com/psirenny/monorepo/tree/master/packages/graphql-schema-linter-config/commit/bbe1d46e1cf0af33ce263bb422b1ae3cdea7227b))
+
+
+### BREAKING CHANGES
+
+* **eslint-config:** * replaceAll is preferred over global regex
+* modern APIs are preferred
+* **npm-package-json-lint-config:** package.json description fields can no longer end with a period
+
+
+
+
+
 ## [4.0.2](http://github.com/psirenny/monorepo/tree/master/packages/graphql-schema-linter-config/compare/@psirenny/graphql-schema-linter-config@4.0.1...@psirenny/graphql-schema-linter-config@4.0.2) (2020-02-27)
 
 **Note:** Version bump only for package @psirenny/graphql-schema-linter-config

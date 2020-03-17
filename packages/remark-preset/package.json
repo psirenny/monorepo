@@ -1,6 +1,6 @@
 {
   "name": "@psirenny/remark-preset",
-  "version": "3.0.3",
+  "version": "4.0.0",
   "description": "psirenny's remark config",
   "author": "Dennis Torres <djtorres0@gmail.com>",
   "bugs": "https://github.com/psirenny/monorepo/issues",

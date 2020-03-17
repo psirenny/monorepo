@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](http://github.com/psirenny/monorepo/tree/master/packages/stylelint-config-styled-components/compare/@psirenny/stylelint-config-styled-components@3.1.1...@psirenny/stylelint-config-styled-components@4.0.0) (2020-03-17)
+
+
+### Bug Fixes
+
+* **stylelint-config-styled-components:** ignore dummy keyword error ([6e1eafb](http://github.com/psirenny/monorepo/tree/master/packages/stylelint-config-styled-components/commit/6e1eafb57f050b5e43ee77e7ef584831b1768bd8))
+
+
+### Features
+
+* **eslint-config:** update eslint config rules ([a2cb7b2](http://github.com/psirenny/monorepo/tree/master/packages/stylelint-config-styled-components/commit/a2cb7b2199a9eadbf5f6040d7e1235480f115780))
+
+
+### BREAKING CHANGES
+
+* **eslint-config:** * replaceAll is preferred over global regex
+* modern APIs are preferred
+
+
+
+
+
 ## [3.1.1](http://github.com/psirenny/monorepo/tree/master/packages/stylelint-config-styled-components/compare/@psirenny/stylelint-config-styled-components@3.1.0...@psirenny/stylelint-config-styled-components@3.1.1) (2020-02-27)
 
 **Note:** Version bump only for package @psirenny/stylelint-config-styled-components

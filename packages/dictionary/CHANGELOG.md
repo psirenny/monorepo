@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](http://github.com/psirenny/monorepo/tree/master/packages/dictionary/compare/@psirenny/dictionary@3.0.3...@psirenny/dictionary@4.0.0) (2020-03-17)
+
+
+### Features
+
+* **eslint-config:** update eslint config rules ([a2cb7b2](http://github.com/psirenny/monorepo/tree/master/packages/dictionary/commit/a2cb7b2199a9eadbf5f6040d7e1235480f115780))
+* **npm-package-json-lint-config:** add description format rule ([bbe1d46](http://github.com/psirenny/monorepo/tree/master/packages/dictionary/commit/bbe1d46e1cf0af33ce263bb422b1ae3cdea7227b))
+
+
+### BREAKING CHANGES
+
+* **eslint-config:** * replaceAll is preferred over global regex
+* modern APIs are preferred
+* **npm-package-json-lint-config:** package.json description fields can no longer end with a period
+
+
+
+
+
 ## [3.0.3](http://github.com/psirenny/monorepo/tree/master/packages/dictionary/compare/@psirenny/dictionary@3.0.2...@psirenny/dictionary@3.0.3) (2020-02-27)
 
 **Note:** Version bump only for package @psirenny/dictionary
