@@ -7,6 +7,7 @@ export default {
     'config-type': 'error',
     'cpu-type': 'error',
     'dependencies-type': 'error',
+    'description-format': ['error', { forbidEndingPeriod: true }],
     'description-type': 'error',
     'devDependencies-type': 'error',
     'directories-type': 'error',
