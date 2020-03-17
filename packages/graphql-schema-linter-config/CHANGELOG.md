@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.2](http://github.com/psirenny/monorepo/tree/master/packages/graphql-schema-linter-config/compare/@psirenny/graphql-schema-linter-config@4.0.1...@psirenny/graphql-schema-linter-config@4.0.2) (2020-02-27)
+
+**Note:** Version bump only for package @psirenny/graphql-schema-linter-config
+
+
+
+
+
 ## [4.0.1](http://github.com/psirenny/monorepo/tree/master/packages/graphql-schema-linter-config/compare/@psirenny/graphql-schema-linter-config@4.0.0...@psirenny/graphql-schema-linter-config@4.0.1) (2019-12-16)
 
 **Note:** Version bump only for package @psirenny/graphql-schema-linter-config

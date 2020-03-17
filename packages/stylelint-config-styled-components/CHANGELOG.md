@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.1](http://github.com/psirenny/monorepo/tree/master/packages/stylelint-config-styled-components/compare/@psirenny/stylelint-config-styled-components@3.1.0...@psirenny/stylelint-config-styled-components@3.1.1) (2020-02-27)
+
+**Note:** Version bump only for package @psirenny/stylelint-config-styled-components
+
+
+
+
+
+# [3.1.0](http://github.com/psirenny/monorepo/tree/master/packages/stylelint-config-styled-components/compare/@psirenny/stylelint-config-styled-components@3.0.2...@psirenny/stylelint-config-styled-components@3.1.0) (2020-01-09)
+
+
+### Features
+
+* **stylelint-config-styled-components:** add null coalescing operator ([a6f9a4e](http://github.com/psirenny/monorepo/tree/master/packages/stylelint-config-styled-components/commit/a6f9a4ec3bfc5a75b1392d8e38c7432766883978))
+
+
+
+
+
 ## [3.0.2](http://github.com/psirenny/monorepo/tree/master/packages/stylelint-config-styled-components/compare/@psirenny/stylelint-config-styled-components@3.0.1...@psirenny/stylelint-config-styled-components@3.0.2) (2019-12-16)
 
 **Note:** Version bump only for package @psirenny/stylelint-config-styled-components
