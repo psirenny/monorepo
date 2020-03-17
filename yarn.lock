@@ -1960,6 +1960,18 @@
   dependencies:
     "@types/node" ">= 8"
 
+"@psirenny/dictionary@3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@psirenny/dictionary/-/dictionary-3.0.2.tgz#630c10a936f573b5b13f33158d5f696ddb571a03"
+  integrity sha512-VA04ejc6PEwohAFeZvRfNq9dYrWwVPVy5pFz9exjIozFBZsKPGa59bJieOuoXphPZGRwKsjtmCg1Ffbv3umxSw==
+
+"@psirenny/retext-preset@3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@psirenny/retext-preset/-/retext-preset-3.0.2.tgz#750678157ca933a58437013fd7721ae431ff5d13"
+  integrity sha512-EtNJQbluGy/Gw+W7wvjZRVPyjJ9YixDXyVSQKrKAuxutBzhh8hepYsZm6MQPqQ48p5x/Cy2J30pSn65S2VZSbg==
+  dependencies:
+    "@psirenny/dictionary" "3.0.2"
+
 "@sindresorhus/df@^1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@sindresorhus/df/-/df-1.0.1.tgz#c69b66f52f6fcdd287c807df210305dbaf78500d"

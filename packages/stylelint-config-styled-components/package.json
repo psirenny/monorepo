@@ -5,11 +5,7 @@
   "author": "Dennis Torres <djtorres0@gmail.com>",
   "bugs": "https://github.com/psirenny/monorepo/issues",
   "devDependencies": {
-<<<<<<< HEAD
     "@babel/core": "7.8.7",
-=======
-    "@babel/core": "7.8.6",
->>>>>>> c3e414cabf8501d72ed4193c4f09dacf87b38582
     "@babel/plugin-external-helpers": "7.8.3",
     "@babel/plugin-proposal-class-properties": "7.8.3",
     "@babel/plugin-proposal-decorators": "7.8.3",
@@ -27,7 +23,6 @@
     "@babel/plugin-proposal-optional-chaining": "7.8.3",
     "@babel/plugin-proposal-pipeline-operator": "7.8.3",
     "@babel/plugin-proposal-throw-expressions": "7.8.3",
-<<<<<<< HEAD
     "@babel/plugin-proposal-unicode-property-regex": "7.8.8",
     "@babel/plugin-syntax-dynamic-import": "7.8.3",
     "@babel/plugin-syntax-import-meta": "7.8.3",
@@ -39,19 +34,6 @@
     "dictionary-en": "3.0.0",
     "eslint": "6.8.0",
     "eslint-config-airbnb-base": "14.1.0",
-=======
-    "@babel/plugin-proposal-unicode-property-regex": "7.8.3",
-    "@babel/plugin-syntax-dynamic-import": "7.8.3",
-    "@babel/plugin-syntax-import-meta": "7.8.3",
-    "@babel/plugin-transform-flow-strip-types": "7.8.3",
-    "@babel/preset-env": "7.8.6",
-    "@babel/preset-flow": "7.8.3",
-    "babel-eslint": "10.1.0",
-    "babel-plugin-preval": "4.0.0",
-    "dictionary-en-us": "2.2.1",
-    "eslint": "6.8.0",
-    "eslint-config-airbnb-base": "14.0.0",
->>>>>>> c3e414cabf8501d72ed4193c4f09dacf87b38582
     "eslint-plugin-array-func": "3.1.4",
     "eslint-plugin-ava": "10.2.0",
     "eslint-plugin-babel": "5.3.0",
@@ -60,13 +42,8 @@
     "eslint-plugin-flowtype": "4.6.0",
     "eslint-plugin-import": "2.20.1",
     "eslint-plugin-markdown": "1.0.2",
-<<<<<<< HEAD
     "eslint-plugin-unicorn": "17.2.0",
     "flow-bin": "0.120.1",
-=======
-    "eslint-plugin-unicorn": "16.1.1",
-    "flow-bin": "0.119.1",
->>>>>>> c3e414cabf8501d72ed4193c4f09dacf87b38582
     "flow-typed": "3.0.0",
     "npm-run-all": "4.1.5",
     "remark-cli": "7.0.1",
@@ -88,7 +65,6 @@
     "retext-contractions": "4.0.0",
     "retext-diacritics": "3.0.0",
     "retext-english": "3.0.4",
-<<<<<<< HEAD
     "retext-equality": "5.0.0",
     "retext-indefinite-article": "2.0.0",
     "retext-intensify": "5.0.0",
@@ -104,23 +80,6 @@
     "retext-syntax-mentions": "2.0.0",
     "retext-syntax-urls": "2.0.0",
     "rollup": "2.0.6",
-=======
-    "retext-equality": "4.5.0",
-    "retext-indefinite-article": "1.1.7",
-    "retext-intensify": "4.0.0",
-    "retext-passive": "2.0.0",
-    "retext-profanities": "5.0.0",
-    "retext-quotes": "3.0.0",
-    "retext-readability": "5.0.0",
-    "retext-redundant-acronyms": "2.0.0",
-    "retext-repeated-words": "2.0.0",
-    "retext-sentence-spacing": "3.0.0",
-    "retext-simplify": "5.1.0",
-    "retext-spell": "3.0.0",
-    "retext-syntax-mentions": "1.1.6",
-    "retext-syntax-urls": "1.0.2",
-    "rollup": "1.31.1",
->>>>>>> c3e414cabf8501d72ed4193c4f09dacf87b38582
     "rollup-plugin-babel": "5.0.0-alpha.0",
     "rollup-plugin-flow-entry": "0.3.4",
     "stylelint-config-styled-components": "0.1.1",
