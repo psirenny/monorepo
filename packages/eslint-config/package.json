@@ -98,7 +98,7 @@
     "eslint-plugin-flowtype": "^4.2.0",
     "eslint-plugin-markdown": "^1.0.0",
     "eslint-plugin-optimize-regex": "^1.1.6",
-    "eslint-plugin-unicorn": "^17.2.0"
+    "eslint-plugin-unicorn": "^20.0.0"
   },
   "gitHead": "c7038e072b611fb178978e6dc33764962048049f",
   "homepage": "https://github.com/psirenny/monorepo/tree/master/packages/eslint-config",
