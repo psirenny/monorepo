@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.1](http://github.com/psirenny/monorepo/tree/master/packages/dictionary/compare/@psirenny/dictionary@4.0.0...@psirenny/dictionary@4.0.1) (2020-05-13)
+
+**Note:** Version bump only for package @psirenny/dictionary
+
+
+
+
+
 # [4.0.0](http://github.com/psirenny/monorepo/tree/master/packages/dictionary/compare/@psirenny/dictionary@3.0.3...@psirenny/dictionary@4.0.0) (2020-03-17)
 
 

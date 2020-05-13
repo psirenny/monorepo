@@ -1,11 +1,11 @@
 {
   "name": "@psirenny/retext-preset",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "psirenny's remark config",
   "author": "Dennis Torres <djtorres0@gmail.com>",
   "bugs": "https://github.com/psirenny/monorepo/issues",
   "dependencies": {
-    "@psirenny/dictionary": "4.0.0"
+    "@psirenny/dictionary": "4.0.1"
   },
   "devDependencies": {
     "@babel/core": "7.9.6",

@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](http://github.com/psirenny/monorepo/tree/master/packages/eslint-config/compare/@psirenny/eslint-config@4.0.0...@psirenny/eslint-config@5.0.0) (2020-05-13)
+
+
+### Features
+
+* **eslint-config:** update rules ([c39ba66](http://github.com/psirenny/monorepo/tree/master/packages/eslint-config/commit/c39ba66854503fb7c355db5becbc2cd56e567982))
+
+
+### BREAKING CHANGES
+
+* **eslint-config:** updated peer dependency
+
+
+
+
+
 # [4.0.0](http://github.com/psirenny/monorepo/tree/master/packages/eslint-config/compare/@psirenny/eslint-config@3.1.2...@psirenny/eslint-config@4.0.0) (2020-03-17)
 
 
