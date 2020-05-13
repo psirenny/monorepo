@@ -15,7 +15,6 @@ export default {
     'input-object-values-have-descriptions',
     'relay-connection-types-spec',
     'relay-connection-arguments-spec',
-    'relay-page-info-spec',
     'types-are-capitalized',
     'type-fields-sorted-alphabetic',
     'types-have-descriptions',
