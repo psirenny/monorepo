@@ -83,7 +83,7 @@
     "retext-spell": "4.0.0",
     "retext-syntax-mentions": "2.1.0",
     "retext-syntax-urls": "2.0.0",
-    "rollup": "2.10.0",
+    "rollup": "2.10.1",
     "rollup-plugin-babel": "5.0.0-alpha.0",
     "rollup-plugin-flow-entry": "0.3.4",
     "trash-cli": "3.0.0",
