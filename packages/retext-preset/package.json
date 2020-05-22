@@ -5,7 +5,7 @@
   "author": "Dennis Torres <djtorres0@gmail.com>",
   "bugs": "https://github.com/psirenny/monorepo/issues",
   "dependencies": {
-    "@psirenny/dictionary": "4.0.1"
+    "@psirenny/dictionary": "4.0.2"
   },
   "devDependencies": {
     "@babel/core": "7.9.6",
