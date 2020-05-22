@@ -29,7 +29,7 @@ export default {
     'flowtype/no-weak-types': [2],
     'flowtype/require-types-at-top': [2],
     'flowtype/require-valid-file-annotation': [2, 'always', { annotationStyle: 'line' }],
-    'flowtype/sort-keys': [2, 'asc', { natural: true }],
+    'flowtype/sort-keys': [2, 'asc'],
     'flowtype/type-id-match': [2, '^([A-Z][a-z0-9]*)+$'],
     'function-paren-newline': [0, 'consistent'],
     'max-len': [2, {
