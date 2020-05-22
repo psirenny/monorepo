@@ -4,6 +4,7 @@ export default {
   extends: ['stylelint-config-recommended'],
   plugins: ['stylelint-order'],
   rules: {
+    'alpha-value-notation': ['number'],
     'at-rule-name-case': ['lower'],
     'at-rule-name-space-after': ['always'],
     'at-rule-no-unknown': [true],
@@ -11,6 +12,7 @@ export default {
     'block-closing-brace-newline-after': ['always'],
     'block-no-empty': [true],
     'block-opening-brace-space-after': ['always'],
+    'color-function-notation': ['modern'],
     'color-hex-case': ['lower'],
     'color-hex-length': ['short'],
     'color-named': ['never'],
@@ -38,6 +40,7 @@ export default {
     'function-parentheses-space-inside': ['never'],
     'function-url-quotes': ['never', { except: 'empty' }],
     'function-whitespace-after': ['always'],
+    'hue-degree-notation': ['number'],
     'indentation': [2],
     'keyframe-declaration-no-important': [true],
     'length-zero-no-unit': [true],
