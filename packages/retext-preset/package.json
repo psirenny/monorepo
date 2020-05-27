@@ -31,7 +31,7 @@
     "@babel/plugin-syntax-import-meta": "7.10.1",
     "@babel/plugin-transform-flow-strip-types": "7.10.1",
     "@babel/preset-env": "7.10.1",
-    "@babel/preset-flow": "7.9.0",
+    "@babel/preset-flow": "7.10.1",
     "babel-eslint": "10.1.0",
     "babel-plugin-preval": "5.0.0",
     "dictionary-en": "3.0.0",
