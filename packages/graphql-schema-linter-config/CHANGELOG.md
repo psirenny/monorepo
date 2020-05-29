@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.0.0](http://github.com/psirenny/monorepo/tree/master/packages/graphql-schema-linter-config/compare/@psirenny/graphql-schema-linter-config@5.0.0...@psirenny/graphql-schema-linter-config@8.0.0) (2020-05-29)
+
+
+### chore
+
+* **graphql-schema-linter-config:** update peer dependency ([8422b2f](http://github.com/psirenny/monorepo/tree/master/packages/graphql-schema-linter-config/commit/8422b2f3c1900dcbec003d8029b07da4f86df76e))
+
+
+### BREAKING CHANGES
+
+* **graphql-schema-linter-config:** graphql-schema-linter version bump
+
+
+
+
+
 # [7.0.0](http://github.com/psirenny/monorepo/tree/master/packages/graphql-schema-linter-config/compare/@psirenny/graphql-schema-linter-config@5.0.0...@psirenny/graphql-schema-linter-config@7.0.0) (2020-05-22)
 
 
