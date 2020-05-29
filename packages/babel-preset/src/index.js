@@ -5,7 +5,7 @@ type Options = { [string]: mixed };
 export default (_: mixed, opts: Options) => ({
   plugins: [
     ['@babel/plugin-transform-flow-strip-types'],
-    ['@babel/plugin-proposal-class-properties', { loose: false }],
+    ['@babel/plugin-proposal-class-properties', { loose: true }],
     ['@babel/plugin-proposal-decorators', { legacy: true }],
     ['@babel/plugin-proposal-do-expressions'],
     ['@babel/plugin-proposal-export-default-from'],
