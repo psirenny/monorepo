@@ -12,5 +12,6 @@ export default {
     'react/forbid-elements': [2, { forbid: ['style'] }],
     'react/jsx-filename-extension': [0],
     'react/jsx-props-no-spreading': [0],
+    'react/jsx-sort-props': [2, { reservedFirst: true }],
   },
 };
