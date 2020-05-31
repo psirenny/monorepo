@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.0.0](http://github.com/psirenny/monorepo/tree/master/packages/eslint-config/compare/@psirenny/eslint-config@4.0.0...@psirenny/eslint-config@8.0.0) (2020-05-31)
+
+
+### chore
+
+* **eslint-config:** update dependencies ([fcf47f8](http://github.com/psirenny/monorepo/tree/master/packages/eslint-config/commit/fcf47f800eea409720aa05a66ed15b3577bc551f))
+
+
+### Features
+
+* **eslint-config:** update rules ([c39ba66](http://github.com/psirenny/monorepo/tree/master/packages/eslint-config/commit/c39ba66854503fb7c355db5becbc2cd56e567982))
+
+
+### BREAKING CHANGES
+
+* **eslint-config:** change flowtype sort keys config.
+* **eslint-config:** updated peer dependency
+
+
+
+
+
 # [7.0.0](http://github.com/psirenny/monorepo/tree/master/packages/eslint-config/compare/@psirenny/eslint-config@4.0.0...@psirenny/eslint-config@7.0.0) (2020-05-29)
 
 
