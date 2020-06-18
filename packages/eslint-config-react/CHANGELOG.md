@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](http://github.com/psirenny/monorepo/tree/master/packages/eslint-config-react/compare/@psirenny/eslint-config-react@4.0.0...@psirenny/eslint-config-react@5.0.0) (2020-05-31)
+
+
+### Features
+
+* **eslint-config-react:** sort jsx props ([8ca80fb](http://github.com/psirenny/monorepo/tree/master/packages/eslint-config-react/commit/8ca80fbba948f2529fe06ce1af90e483789d9f19))
+
+
+### BREAKING CHANGES
+
+* **eslint-config-react:** jsx props must be alphabetically sorted
+
+
+
+
+
+## [4.0.3](http://github.com/psirenny/monorepo/tree/master/packages/eslint-config-react/compare/@psirenny/eslint-config-react@4.0.0...@psirenny/eslint-config-react@4.0.3) (2020-05-29)
+
+**Note:** Version bump only for package @psirenny/eslint-config-react
+
+
+
+
+
 ## [4.0.2](http://github.com/psirenny/monorepo/tree/master/packages/eslint-config-react/compare/@psirenny/eslint-config-react@4.0.0...@psirenny/eslint-config-react@4.0.2) (2020-05-22)
 
 **Note:** Version bump only for package @psirenny/eslint-config-react

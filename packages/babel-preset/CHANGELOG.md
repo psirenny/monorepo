@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.4](http://github.com/psirenny/monorepo/tree/master/packages/babel-preset/compare/@psirenny/babel-preset@4.0.0...@psirenny/babel-preset@4.0.4) (2020-05-31)
+
+**Note:** Version bump only for package @psirenny/babel-preset
+
+
+
+
+
+## [4.0.3](http://github.com/psirenny/monorepo/tree/master/packages/babel-preset/compare/@psirenny/babel-preset@4.0.0...@psirenny/babel-preset@4.0.3) (2020-05-29)
+
+**Note:** Version bump only for package @psirenny/babel-preset
+
+
+
+
+
 ## [4.0.2](http://github.com/psirenny/monorepo/tree/master/packages/babel-preset/compare/@psirenny/babel-preset@4.0.0...@psirenny/babel-preset@4.0.2) (2020-05-22)
 
 **Note:** Version bump only for package @psirenny/babel-preset
